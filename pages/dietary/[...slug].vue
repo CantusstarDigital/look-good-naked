@@ -26,13 +26,20 @@
 
       <div class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
 
-          <div class="flex flex-col gap-1">
+          <div class="flex flex-col gap-4">
             <picture>
               <source :srcset="`${data.article.img}`" type="image/jpeg">
               <img :src="`${data.article.img}`" :alt="data.article.title" :title="data.article.title" width="300px"
                 height="300px" class="mx-auto rounded-lg w-full" loading="eager" />
             </picture>
-            <h2 class="text-xs font-semibold italic mt-3 text-center">{{ data.article.alt }}</h2>
+            <div class="grid grid-cols-2 gap-5">
+              <div>
+                <h2 class="text-xs font-semibold italic text-left">{{ data.article.alt }}</h2>
+              </div>
+              <div>
+                <div class="text-xs font-semibold italic text-right">Photo by <a :href="`${data.article.creditlink}`" target="_blank">{{ data.article.credit }}</a></div>
+              </div>
+            </div>
           </div>
 
           <article class="prose prose-a:no-underline prose-a:font-bold prose-headings:font-bold">
