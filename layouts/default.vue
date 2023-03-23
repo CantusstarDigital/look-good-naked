@@ -2,6 +2,7 @@
     <div class="">
         <Menu />
         <slot />
+        <Footer />
     </div>
 </template>
 

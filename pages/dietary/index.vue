@@ -1,20 +1,20 @@
 <template>
 
-    <header class="bg-cover bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80')] overflow-hidden relative">
-        <section class="container mx-auto px-6 md:px-8 py-20 md:py-30 relative z-[2]">
+    <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/dietary.jpg')] overflow-hidden relative">
+        <section class="container mx-auto px-6 md:px-8 py-20 md:py-40 relative z-[2]">
             <div class="w-full lg:w-1/2 lg:pr-20 relative group">
-                <div class="flex flex-col gap-4">
-                    <div class="font-semibold text-blue-700">Dietary Preferences</div>
-                    <h1 class="font-extrabold text-4xl sm:text-5xl tracking-tight text-slate-900">Discover Your Ideal Diet <span class="text-2xl sm:text-3xl block opacity-60 mt-3">A Comprehensive Guide to Popular Dietary Preferences.</span></h1>
+                <div class="flex flex-col gap-6">
+                    <h1 class="font-bold text-white opacity-70">Dietary Preferences</h1>
+                    <div class="font-extrabold text-4xl sm:text-5xl tracking-tight text-white">Discover Your Ideal Diet: <br>A Comprehensive Guide to Popular Dietary Preferences.</div>
                     <div class="space-x-2">
                         <span v-for="(tag, n) in articleTags" :key="n">
-                        <NuxtLink :to="`/dietary/tags/${tag}`" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
+                            <NuxtLink :to="`/dietary/tags/${tag}`" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
                         </span>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="absolute top-0 left-0 w-full lg:w-1/2 h-full z-[1] backdrop-blur-xl bg-white/40"></div>
+        <div class="absolute top-0 left-0 w-full lg:w-1/2 h-full z-[1] backdrop-blur-xl bg-slate-900/60 shadow-2xl border-r border-slate-50/[0.06]"></div>
     </header>
 
     <div class="pt-20 mb-20 container mx-auto px-6 md:px-8">
@@ -37,17 +37,15 @@
                     <!-- Default list slot -->
                     <template v-slot="{ list }">
                         <article v-for="article in list" :key="article._path" class="group relative flex flex-col gap-4">
-                            <div class="absolute -inset-y-4 -inset-x-4 z-0 scale-95 bg-slate-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4 rounded-xl"></div>
+                            <div class="absolute -inset-y-4 -inset-x-4 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4"></div>
                             <div class="relative z-[2] flex flex-col gap-4">
                                 <NuxtLink :to="article._path" class="w-full h-48">
-                                    <img :src="`${article.img}`" class="rounded object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                    <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <NuxtLink :to="article._path">
                                     <h2 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">{{ article.title }}</h2>
+                                    <div class="line-clamp-2 mt-4">{{ article.description }}</div>
                                 </NuxtLink>
-                                <div class="flex gap-1">
-                                    <NuxtLink :to="`/dietary/tags/${tag}`" v-for="(tag, n) in article.tags" :key="n" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
-                                </div>
                             </div>
                         </article>
                     </template>

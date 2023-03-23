@@ -7,7 +7,7 @@
 /* npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --watch --minify */
 
 .router-link-active {
-    @apply text-blue-700;
+    @apply text-black;
 }
 
 .aff-img a {
@@ -26,4 +26,8 @@
 }
 .art-cite a {
     @apply font-normal underline;
+}
+
+.prose a[href*="#"] {
+    @apply font-bold -mt-24 pt-24 flex;
 }

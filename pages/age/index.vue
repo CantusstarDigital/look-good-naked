@@ -1,6 +1,6 @@
 <template>
 
-    <header class="bg-cover bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1595857997852-6cdae332b05b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] overflow-hidden relative">
+    <header class="bg-cover bg-center bg-no-repeat grayscale bg-[url('https://images.unsplash.com/photo-1595857997852-6cdae332b05b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] overflow-hidden relative">
         <section class="container mx-auto px-6 md:px-8 py-20 md:py-40 relative z-[2]">
             <div class="w-full lg:w-1/2 lg:pr-20 relative group">
                 <h1 class="font-semibold text-slate-50 opacity-60">Age Groups</h1>

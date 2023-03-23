@@ -23,10 +23,10 @@
                         <!-- Default list slot -->
                         <template v-slot="{ list }">
                             <article v-for="article in list.slice(0, 3)" :key="article._path" class="relative group flex flex-col gap-4">
-                                <div class="absolute -inset-y-6 -inset-x-4 z-0 border border-primary-500 scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 rounded-xl"></div>
+                                <div class="absolute -inset-y-5 -inset-x-5 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100"></div>
                                 <div class="relative z-[2] flex flex-col gap-4">
-                                    <NuxtLink :to="article._path" class="w-full h-48">
-                                        <img :src="`${article.img}`" class="rounded object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                    <NuxtLink :to="article._path" class="w-full h-48 rounded-lg">
+                                        <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-2">
                                         <h3 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">{{ article.title }}</h3>
@@ -66,10 +66,10 @@
                         <!-- Default list slot -->
                         <template v-slot="{ list }">
                             <article v-for="article in list.slice(0, 3)" :key="article._path" class="relative group flex flex-col gap-4">
-                                <div class="absolute -inset-y-6 -inset-x-4 z-0 border border-primary-500 scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 rounded-xl"></div>
+                                <div class="absolute -inset-y-5 -inset-x-5 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100"></div>
                                 <div class="relative z-[2] flex flex-col gap-4">
-                                    <NuxtLink :to="article._path" class="w-full h-48">
-                                        <img :src="`${article.img}`" class="rounded object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                    <NuxtLink :to="article._path" class="w-full h-48 rounded-lg">
+                                        <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-2">
                                         <h3 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">{{ article.title }}</h3>
@@ -109,10 +109,10 @@
                         <!-- Default list slot -->
                         <template v-slot="{ list }">
                             <article v-for="article in list.slice(0, 3)" :key="article._path" class="relative group flex flex-col gap-4">
-                                <div class="absolute -inset-y-6 -inset-x-4 z-0 border border-primary-500 scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 rounded-xl"></div>
+                                <div class="absolute -inset-y-5 -inset-x-5 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100"></div>
                                 <div class="relative z-[2] flex flex-col gap-4">
-                                    <NuxtLink :to="article._path" class="w-full h-48">
-                                        <img :src="`${article.img}`" class="rounded object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                    <NuxtLink :to="article._path" class="w-full h-48 rounded-lg">
+                                        <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-2">
                                         <h3 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">{{ article.title }}</h3>
@@ -152,10 +152,10 @@
                         <!-- Default list slot -->
                         <template v-slot="{ list }">
                             <article v-for="article in list.slice(0, 3)" :key="article._path" class="relative group flex flex-col gap-4">
-                                <div class="absolute -inset-y-6 -inset-x-4 z-0 border border-primary-500 scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 rounded-xl"></div>
+                                <div class="absolute -inset-y-5 -inset-x-5 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100"></div>
                                 <div class="relative z-[2] flex flex-col gap-4">
-                                    <NuxtLink :to="article._path" class="w-full h-48">
-                                        <img :src="`${article.img}`" class="rounded object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                    <NuxtLink :to="article._path" class="w-full h-48 rounded-lg">
+                                        <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-2">
                                         <h3 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">{{ article.title }}</h3>
@@ -195,10 +195,10 @@
                         <!-- Default list slot -->
                         <template v-slot="{ list }">
                             <article v-for="article in list.slice(0, 3)" :key="article._path" class="relative group flex flex-col gap-4">
-                                <div class="absolute -inset-y-6 -inset-x-4 z-0 border border-primary-500 scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 rounded-xl"></div>
+                                <div class="absolute -inset-y-5 -inset-x-5 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100"></div>
                                 <div class="relative z-[2] flex flex-col gap-4">
-                                    <NuxtLink :to="article._path" class="w-full h-48">
-                                        <img :src="`${article.img}`" class="rounded object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                    <NuxtLink :to="article._path" class="w-full h-48 rounded-lg">
+                                        <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-2">
                                         <h3 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">{{ article.title }}</h3>
