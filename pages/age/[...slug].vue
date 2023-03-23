@@ -77,7 +77,6 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
 
 // destrucure `prev` and `next` value from data
 const [prev, next] = data.value.surround;
-console.log({ data, prev, next });
 
 // function to format date
 const formatDate = (date) => {

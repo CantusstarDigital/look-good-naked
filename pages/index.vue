@@ -240,8 +240,8 @@
         return `${day}-${month}-${year}`;
     };
 
-    const title = ref('Digital Transformation Services')
-    const description = ref('Transform your business with our digital services. We provide cloud computing solutions, web development, and UX design to help you thrive in the digital age.')
+    const title = ref('Homepage Title')
+    const description = ref('Homepage Description')
 
     // set meta for page
     useHead({

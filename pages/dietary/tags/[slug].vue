@@ -55,7 +55,6 @@ const {
   params: { slug },
 } = useRoute();
 const filter = slug.split(",");
-console.log({ filter });
 
 // function to format date
 const formatDate = (date) => {

@@ -63,7 +63,6 @@
 <script setup>
     // helper function to flatten tags array
     const flatten = (tags, key) => {
-    console.log(tags);
     let _tags = tags
         .map((tag) => {
         let _tag = tag;
@@ -74,7 +73,7 @@
         return _tag;
         })
         .flat(1);
-    console.log({ _tags });
+        
     return _tags;
     };
 
@@ -83,7 +82,6 @@
 
     // generate array without duplicates from flattened array
     const articleTags = [...new Set(flatten(data.value, "tags"))];
-    console.log({ articleTags });
 
 
     definePageMeta({
