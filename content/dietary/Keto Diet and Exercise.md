@@ -6,5 +6,5 @@ alt: Keto Diet and Exercise - How to Optimise Your Fitness Routine for Maximum R
 credit: Brooke Lark
 creditlink: https://unsplash.com/@brookelark
 created_At: 2023-03-17
-tags: [Dietry, Keto]
+tags: [Keto]
 ---

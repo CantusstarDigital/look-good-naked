@@ -6,5 +6,5 @@ alt: Keto Snack Attack - 15 Tasty, Low-Carb Snack Ideas to Keep You Energised an
 credit: Louis Hansel
 creditlink: https://unsplash.com/@louishansel
 created_At: 2023-03-16
-tags: [Dietry, Keto]
+tags: [Keto]
 ---

@@ -11,9 +11,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        'display': ['Playfair Display'],
-      },
     },
   },
   corePlugins: {

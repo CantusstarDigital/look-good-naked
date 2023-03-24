@@ -4,7 +4,7 @@ description: Your Ultimate Guide to Starting and Succeeding on a Ketogenic Diet.
 img: https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1153&q=80
 alt: Keto for Beginners - Your Ultimate Guide to Starting and Succeeding on a Ketogenic Diet
 created_At: 2023-03-12
-tags: [Dietry, Keto]
+tags: [Keto]
 ---
 
 ## Intro to Keto 
@@ -49,6 +49,8 @@ Consistency is vital in the keto diet. Remain committed to your goals and be pre
 Starting and succeeding on a keto diet requires a solid understanding of the basics, goal setting, meal planning, and commitment. Embrace the process and enjoy the transformative benefits of the ketogenic diet. Following this ultimate guide will enable you to embark on your keto journey and achieve your health and wellness goals.
 
 <div class="art-cite">
+
+**We use only high-quality sources to support the facts within our articles.**
 
 1. Paoli, A. (2014). Ketogenic Diet for Obesity: Friend or Foe?. International journal of environmental research and public health, 11(2), 2092–2107.
 2. Masood, W., & Uppaluri, K. R. (2018). Ketogenic Diet. In StatPearls. StatPearls Publishing.

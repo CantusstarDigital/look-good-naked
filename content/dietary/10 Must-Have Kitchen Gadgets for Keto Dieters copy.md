@@ -6,7 +6,7 @@ alt: 10 Must-Have Kitchen Gadgets for Keto Dieters
 credit: Todd Quackenbush
 creditlink: https://unsplash.com/@toddquackenbush
 created_At: 2023-03-11
-tags: [Dietry, Keto, Kitchen]
+tags: [Keto]
 ---
 
 ## Keto Diet Explained

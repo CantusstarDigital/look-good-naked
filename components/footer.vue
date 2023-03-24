@@ -1,12 +1,12 @@
 <template>
     <footer class="bg-white border-t-2 border-black" aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
-        <div class="py-20 container mx-auto px-6 md:px-8">
-            <div class="flex flex-col gap-10">
+        <div class="py-10 container mx-auto px-6 md:px-8">
+            <div class="flex flex-col gap-6">
 
                 <div>
-                    <NuxtLink to="/" class="flex items-center">
-                        <img src="/img/logo.svg" class="h-14" alt="Look Good Naked" title="Look Good Naked" loading="lazy" />
+                    <NuxtLink to="/" class="flex items-center h-14 w-14">
+                        <img src="/img/logo.svg" class="h-14 w-14" alt="Look Good Naked" title="Look Good Naked" loading="lazy" />
                     </NuxtLink>
                 </div>
 
@@ -19,10 +19,15 @@
                 </div>
 
                 <div class="space-x-6">
-                    <NuxtLink to="/fitness" class="font-bold text-sm p-3 pl-0 text-gray-500 hover:text-black">About Us</NuxtLink>
-                    <NuxtLink to="/dietary" class="font-bold text-sm p-3 text-gray-500 hover:text-black">Contact Us</NuxtLink>
-                    <NuxtLink to="/lifestyle" class="font-bold text-sm p-3 text-gray-500 hover:text-black">Newsletters</NuxtLink>
-                    <NuxtLink to="/health" class="font-bold text-sm p-3 text-gray-500 hover:text-black">Sitemap</NuxtLink>
+                    <NuxtLink to="/fitness" class="font-bold text-sm p-3 pl-0 hover:text-black">About Us</NuxtLink>
+                    <NuxtLink to="/dietary" class="font-bold text-sm p-3 hover:text-black">Contact Us</NuxtLink>
+                    <NuxtLink to="/lifestyle" class="font-bold text-sm p-3 hover:text-black">Newsletters</NuxtLink>
+                    <NuxtLink to="/health" class="font-bold text-sm p-3 hover:text-black">Sitemap</NuxtLink>
+                </div>
+
+                <div class="max-w-2xl text-xs flex flex-col gap-4">
+                    <p>The content on our website serves as a resource for informational and educational purposes only and should not be construed as a replacement for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional to guide your health needs and concerns.</p>
+                    <p>&copy; {{ new Date().getFullYear() }} LookGoodNaked — All rights reserved</p>
                 </div>
 
                 <div class="flex space-x-6">

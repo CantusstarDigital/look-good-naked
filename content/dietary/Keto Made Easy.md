@@ -6,5 +6,5 @@ alt: Keto Made Easy - 30 Delicious Low-Carb Recipes to Keep You Satisfied and On
 credit: Lily Banse
 creditlink: https://unsplash.com/@lvnatikk
 created_At: 2023-03-13
-tags: [Dietry, Keto]
+tags: [Keto]
 ---
