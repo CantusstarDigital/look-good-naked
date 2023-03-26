@@ -1,6 +1,6 @@
 <template>
 
-    <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/dietary.jpg')] overflow-hidden relative">
+    <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/dietary.jpg')] overflow-hidden relative"> 
         <section class="container mx-auto px-6 md:px-8 py-20 relative z-[2]">
             <div class="w-full lg:w-1/2 lg:pr-20 relative group">
                 <div class="flex flex-col gap-6">

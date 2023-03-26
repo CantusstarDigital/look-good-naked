@@ -26,6 +26,13 @@
     @apply font-normal underline;
 }
 
+#tocNav li a {
+    @apply text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block;
+}
+#tocNav li a.active {
+    @apply text-black before:flex before:bg-black font-semibold;
+}
+
 .prose a[href*="#"] {
-    @apply font-bold -mt-24 pt-24 flex;
+    @apply font-bold;
 }

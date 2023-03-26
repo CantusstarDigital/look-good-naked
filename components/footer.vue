@@ -1,12 +1,11 @@
 <template>
     <footer class="bg-white border-t-2 border-black" aria-labelledby="footer-heading">
-        <h2 id="footer-heading" class="sr-only">Footer</h2>
         <div class="py-10 container mx-auto px-6 md:px-8">
             <div class="flex flex-col gap-6">
 
                 <div>
                     <NuxtLink to="/" class="flex items-center h-14 w-14">
-                        <img src="/img/logo.svg" class="h-14 w-14" alt="Look Good Naked" title="Look Good Naked" loading="lazy" />
+                        <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Look Good Naked" title="Look Good Naked" loading="lazy" />
                     </NuxtLink>
                 </div>
 
