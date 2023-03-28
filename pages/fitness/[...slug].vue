@@ -4,7 +4,7 @@
   <header v-if="data.article" class="container mx-auto px-6 md:px-8 py-20">
       <div class="max-w-4xl flex flex-col gap-3">
         <div class="font-semibold text-xs text-slate-500">{{ formatDate(data.article.created_At) }}</div> 
-        <h1 class="text-slate-900 font-extrabold text-4xl sm:text-5xl tracking-tight">{{ data.article.title }}</h1>
+        <h1 class="text-slate-900 font-black text-4xl sm:text-5xl tracking-tight">{{ data.article.title }}</h1>
         <p class="text-xl text-slate-500 font-bold">{{ data.article.description }}</p>
         <div class="space-x-2">
           <NuxtLink :to="`/dietary/tags/${tag}`" v-for="(tag, n) in data.article.tags" :key="n" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>

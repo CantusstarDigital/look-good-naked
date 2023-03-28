@@ -3,9 +3,22 @@
 
         <section class="py-20">
             <div class="container mx-auto px-6 md:px-8">
+                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                    <div>
+                        <BmiCalculator />
+                    </div>
+                    <div>
+                        <CalorieCalculator />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6 md:px-8">
                 <div class="max-w-2xl flex flex-col gap-4">
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Fitness Goals</h2>
-                    <p>Discover Your Ideal Diet: A Comprehensive Guide to Popular Dietary Preferences.</p>
+                    <p>Welcome to our Fitness Goals hub, where we empower you to unlock your potential and achieve your health and wellness aspirations.</p>
                 </div>
                 <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     <ContentList path="/fitness" :query="{
@@ -48,7 +61,7 @@
             <div class="container mx-auto px-6 md:px-8">
                 <div class="max-w-2xl flex flex-col gap-4">
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Dietary Preferences</h2>
-                    <p>Discover Your Ideal Diet: A Comprehensive Guide to Popular Dietary Preferences.</p>
+                    <p>Welcome to your Dietary Preferences hub, where we delve into the world of popular diets and help you navigate your unique nutritional needs.</p>
                 </div>
                 <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     <ContentList path="/dietary" :query="{

@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('~/assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('~/assets/fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --watch --minify */
+
+html {
+    font-family: 'Mona Sans';
+}
 
 .router-link-active {
     @apply text-black;

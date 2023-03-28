@@ -20,6 +20,7 @@
                 <div class="space-x-6">
                     <NuxtLink to="/fitness" class="font-bold text-sm p-3 pl-0 hover:text-black">About Us</NuxtLink>
                     <NuxtLink to="/dietary" class="font-bold text-sm p-3 hover:text-black">Contact Us</NuxtLink>
+                    <NuxtLink to="/fitness-calculators" class="font-bold text-sm p-3 hover:text-black">Fitness Calculators</NuxtLink>
                     <NuxtLink to="/lifestyle" class="font-bold text-sm p-3 hover:text-black">Newsletters</NuxtLink>
                     <NuxtLink to="/health" class="font-bold text-sm p-3 hover:text-black">Sitemap</NuxtLink>
                 </div>
