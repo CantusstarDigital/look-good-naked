@@ -32,15 +32,15 @@
                 }">
                     <!-- Default list slot -->
                     <template v-slot="{ list }">
-                        <article v-for="article in list" :key="article._path" class="group relative flex flex-col gap-4">
+                        <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
                             <div class="absolute -inset-y-4 -inset-x-4 z-0 scale-95 bg-slate-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4 rounded-xl"></div>
-                            <div class="relative z-[2] flex flex-col gap-4">
-                                <NuxtLink :to="article._path">
+                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
+                                <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
                                     <img :src="`${article.img}`" class="w-full rounded" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <div class="font-semibold text-xs text-slate-500">{{ formatDate(article.created_At) }}</div>
-                                <NuxtLink :to="article._path">
-                                    <h2 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">{{ article.title }}</h2>
+                                <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
+                                    <h2 class="text-xl text-slate-900 font-extrabold">{{ article.title }}</h2>
                                     <p class="mt-4 max-w-3xl space-y-6 line-clamp-4">{{ article.description }}</p>
                                 </NuxtLink>
                                 <div class="flex gap-1">

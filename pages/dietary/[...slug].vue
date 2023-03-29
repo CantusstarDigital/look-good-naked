@@ -3,7 +3,12 @@
 
     <header v-if="data.article" class="container mx-auto px-6 md:px-8 py-20">
         <div class="max-w-4xl flex flex-col gap-3">
-          <div class="font-semibold text-xs text-slate-500">{{ formatDate(data.article.created_At) }}</div> 
+          <div class="text-xs font-semibold flex gap-1 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            {{ formatDate(data.article.created_At) }}
+          </div> 
           <h1 class="text-slate-900 font-extrabold text-4xl sm:text-5xl tracking-tight">{{ data.article.title }}</h1>
           <p class="text-xl text-slate-500 font-bold">{{ data.article.description }}</p>
           <div class="space-x-2">
@@ -87,11 +92,16 @@ const [prev, next] = data.value.surround;
 
 // function to format date
 const formatDate = (date) => {
-    const d = new Date(date);
-    const year = d.getFullYear();
-    const month = ("0" + (d.getMonth() + 1)).slice(-2);
-    const day = ("0" + d.getDate()).slice(-2);
-    return `${day}-${month}-${year}`;
+  const d = new Date(date);
+  const year = d.getFullYear();
+  const monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+  const month = monthNames[d.getMonth()];
+  const day = d.getDate();
+
+  return `${day} ${month} ${year}`;
 };
 
 // set the meta

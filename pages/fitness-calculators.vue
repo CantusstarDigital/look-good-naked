@@ -28,44 +28,41 @@
     <div class="mt-20 mb-20 container mx-auto px-6 md:px-8">
         <section class="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20">
             
-            <article class="group relative flex flex-col gap-4">
-                <div class="absolute -inset-y-4 -inset-x-4 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4"></div>
-                <div class="relative z-[2] flex flex-col gap-4">
+            <article class="card relative flex flex-col gap-4">
+                <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
                     <div to="" class="absolute right-0 top-4 bg-black text-white px-2 py-1 uppercase font-bold text-xs rounded-l-lg">Tag</div>
                     <NuxtLink to="" class="w-full h-48">
-                        <img src="" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" alt="BMI Calculator" title="BMI Calculator" loading="lazy" />
+                        <img src="" class="object-cover w-full h-48" width="300px" height="300px" alt="BMI Calculator" title="BMI Calculator" loading="lazy" />
                     </NuxtLink>
-                    <NuxtLink to="">
-                        <h2 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">BMI Calculator</h2>
-                        <div class="line-clamp-2 mt-4">Description</div>
+                    <NuxtLink to="" class="flex flex-col gap-3 p-3">
+                        <h2 class="text-xl text-slate-900 font-extrabold">BMI Calculator</h2>
+                        <div class="line-clamp-2">Description</div>
                     </NuxtLink>
                 </div>
             </article>
 
-            <article class="group relative flex flex-col gap-4">
-                <div class="absolute -inset-y-4 -inset-x-4 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4"></div>
-                <div class="relative z-[2] flex flex-col gap-4">
+            <article class="card relative flex flex-col gap-4">
+                <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
                     <div to="" class="absolute right-0 top-4 bg-black text-white px-2 py-1 uppercase font-bold text-xs rounded-l-lg">Tag</div>
                     <NuxtLink to="" class="w-full h-48">
-                        <img src="" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" alt="Calorie Calculator" title="Calorie Calculator" loading="lazy" />
+                        <img src="" class="object-cover w-full h-48" width="300px" height="300px" alt="Calorie Calculator" title="Calorie Calculator" loading="lazy" />
                     </NuxtLink>
-                    <NuxtLink to="">
-                        <h2 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">Calorie Calculator</h2>
-                        <div class="line-clamp-2 mt-4">Description</div>
+                    <NuxtLink to="" class="flex flex-col gap-3 p-3">
+                        <h2 class="text-xl text-slate-900 font-extrabold">Calorie Calculator</h2>
+                        <div class="line-clamp-2">Description</div>
                     </NuxtLink>
                 </div>
             </article>
 
-            <article class="group relative flex flex-col gap-4">
-                <div class="absolute -inset-y-4 -inset-x-4 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4"></div>
-                <div class="relative z-[2] flex flex-col gap-4">
+            <article class="card relative flex flex-col gap-4">
+                <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
                     <div to="" class="absolute right-0 top-4 bg-black text-white px-2 py-1 uppercase font-bold text-xs rounded-l-lg">Tag</div>
                     <NuxtLink to="" class="w-full h-48">
-                        <img src="" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" alt="BMR Calculator" title="BMR Calculator" loading="lazy" />
+                        <img src="" class="object-cover w-full h-48" width="300px" height="300px" alt="BMR Calculator" title="BMR Calculator" loading="lazy" />
                     </NuxtLink>
-                    <NuxtLink to="">
-                        <h2 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">BMR Calculator</h2>
-                        <div class="line-clamp-2 mt-4">Description</div>
+                    <NuxtLink to="" class="flex flex-col gap-3 p-3">
+                        <h2 class="text-xl text-slate-900 font-extrabold">BMR Calculator</h2>
+                        <div class="line-clamp-2">Description</div>
                     </NuxtLink>
                 </div>
             </article>

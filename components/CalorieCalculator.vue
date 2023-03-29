@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white py-8 px-4 border-2 border-black sm:rounded-lg sm:px-10 sm:mx-auto sm:w-full sm:max-w-md">
         <div class="flex flex-col gap-4">
-            <h2 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">Calorie Calculator</h2>
+            <h2 class="text-xl text-slate-900 font-extrabold">Calorie Calculator</h2>
             <div class="grid grid-cols-2 gap-4">
                 <div>
                     <label for="age" class="block text-sm font-semibold leading-6">Age</label>

@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-white border-t-2 border-black" aria-labelledby="footer-heading">
-        <div class="py-10 container mx-auto px-6 md:px-8">
+        <div class="py-10 max-w-7xl mx-auto px-6 md:px-8">
             <div class="flex flex-col gap-6">
 
                 <div>

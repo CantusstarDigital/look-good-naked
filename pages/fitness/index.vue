@@ -4,8 +4,8 @@
         <section class="container mx-auto px-6 md:px-8 py-20 relative z-[2]">
             <div class="w-full lg:w-1/2 lg:pr-20 relative group">
                 <div class="flex flex-col gap-6">
-                    <h1 class="font-bold text-white opacity-70">Your Fitness Goals</h1>
-                    <div class="font-extrabold text-4xl sm:text-5xl tracking-tight text-white">Unlock Your Potential: <br>The Ultimate Guide to Achieving Your Fitness Goals</div>
+                    <h1 class="font-bold opacity-70">Your Fitness Goals</h1>
+                    <div class="font-extrabold text-4xl sm:text-5xl tracking-tight">Unlock Your Potential: <br>The Ultimate Guide to Achieving Your Fitness Goals</div>
                     <div class="space-x-2">
                         <span v-for="(tag, n) in articleTags" :key="n">
                             <NuxtLink :to="`/fitness/tags/${tag}`" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
@@ -14,12 +14,9 @@
                 </div>
             </div>
         </section>
-        <div class="absolute top-0 left-0 w-full lg:w-1/2 h-full z-[1] backdrop-blur-xl bg-slate-900/60 shadow-2xl border-r border-slate-50/[0.06]"></div>
+        <div class="absolute top-0 left-0 w-full lg:w-1/2 h-full z-[1] backdrop-blur-md bg-white/90"></div>
     </header>
 
-    <div class="mb-10 py-5 text-center items-center bg-slate-100">
-        <div class="h-[92px] w-[728px] bg-black rounded mx-auto text-center text-white items-center text-xs font-bold">728 x 92</div>
-    </div>
 
     <div class="mt-20 mb-20 container mx-auto px-6 md:px-8">
         <div class="max-w-2xl flex flex-col gap-4">
@@ -49,16 +46,15 @@
                 }">
                     <!-- Default list slot -->
                     <template v-slot="{ list }">
-                        <article v-for="article in list" :key="article._path" class="group relative flex flex-col gap-4">
-                            <div class="absolute -inset-y-4 -inset-x-4 z-0 rounded-lg border-2 border-black scale-95 bg-slate-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4"></div>
-                            <div class="relative z-[2] flex flex-col gap-4">
+                        <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
+                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
                                 <NuxtLink :to="`/fitness/tags/${tag}`" v-for="(tag, n) in article.tags" :key="n" class="absolute right-0 top-4 bg-black text-white px-2 py-1 uppercase font-bold text-xs rounded-l-lg">{{ tag }}</NuxtLink>
                                 <NuxtLink :to="article._path" class="w-full h-48">
-                                    <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                    <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
-                                <NuxtLink :to="article._path">
-                                    <h2 class="text-xl sm:text-2xl text-slate-900 font-extrabold tracking-tight">{{ article.title }}</h2>
-                                    <div class="line-clamp-2 mt-4">{{ article.description }}</div>
+                                <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
+                                    <h2 class="text-xl text-slate-900 font-extrabold">{{ article.title }}</h2>
+                                    <div class="line-clamp-2">{{ article.description }}</div>
                                 </NuxtLink>
                             </div>
                         </article>
@@ -73,9 +69,6 @@
   
     </div>
 
-    <div class="py-5 text-center items-center bg-slate-100">
-        <div class="h-[92px] w-[728px] bg-black rounded mx-auto text-center text-white items-center text-xs font-bold">728 x 92</div>
-    </div>
 </template>
 
 <script setup>
