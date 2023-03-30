@@ -102,4 +102,3 @@ html {
 .card:hover::after {
     transform: translate(-10px,10px);
 }
-

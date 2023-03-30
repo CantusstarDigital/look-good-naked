@@ -50,7 +50,7 @@
 
         <section class="py-20">
             <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
-                <Mailchimp />
+                <SignUp />
             </div>
         </section>
 
