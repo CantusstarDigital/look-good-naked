@@ -6,14 +6,18 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3001',
-            siteName: 'Look Good Naked',
-            siteDescription: 'Things to do, eat and plan to look good naked',
+            siteName: 'Look Good Nood',
+            siteDescription: 'Things to do, eat and plan to look good in the nood',
             language: 'en', // prefer more explicit language codes like `en-AU` over `en`
         }
     },
     modules: [
         '@nuxt/content',
+        'nuxt-gtag'
     ],
+    gtag: {
+        id: 'G-H1QN06FTLW'
+    },
     content: {
         // https://content.nuxtjs.org/api/configuration
     },

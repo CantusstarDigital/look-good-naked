@@ -40,6 +40,6 @@
 
   // Head
   useHead({
-    titleTemplate: '%s · Look Good Naked',
+    titleTemplate: '%s · Look Good Nood',
   })
 </script>

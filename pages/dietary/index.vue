@@ -1,20 +1,22 @@
 <template>
 
     <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/dietary.jpg')] overflow-hidden relative">
-        <section class="max-w-7xl mx-auto px-6 md:px-8 py-20 relative z-[2]">
-            <div class="w-full lg:w-1/2 lg:pr-20 relative group">
-                <div class="flex flex-col gap-6">
-                    <h1 class="font-bold opacity-70">Your Dietary Preferences</h1>
-                    <div class="font-extrabold text-3xl xl:text-4xl tracking-tight">Discover Your Ideal Diet: <br>A Comprehensive Guide to Popular Dietary Preferences.</div>
-                    <div class="space-x-2">
-                        <span v-for="(tag, n) in articleTags" :key="n">
-                            <NuxtLink :to="`/dietary/tags/${tag}`" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
-                        </span>
+        <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2]">
+            <div class="w-full lg:w-2/3 lg:pr-20 relative group">
+                <div class="p-10 backdrop-blur-md bg-black/50 text-white shadow-xl rounded-lg">
+                    <div class="flex flex-col gap-6">
+                        <h1 class="font-bold opacity-70">Your Dietary Preferences</h1>
+                        <div class="font-extrabold text-3xl xl:text-4xl tracking-tight">Discover Your Ideal Diet: <br>A Comprehensive Guide to Popular Dietary Preferences.</div>
+                        <div class="space-x-2">
+                            <span v-for="(tag, n) in articleTags" :key="n">
+                                <NuxtLink :to="`/dietary/tags/${tag}`" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="absolute top-0 left-0 w-full lg:w-1/2 h-full z-[1] backdrop-blur-md bg-white/70"></div>
+        
     </header>
 
     <div class="mt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">

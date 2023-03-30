@@ -21,7 +21,7 @@
                     <li>
                     <NuxtLink to="/dietary" class="block py-2 pl-3 pr-4 font-bold rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0">Dietary Preferences</NuxtLink>
                     </li>
-                    <li>
+                    <!--<li>
                     <NuxtLink to="/fitness" class="block py-2 pl-3 pr-4 font-bold rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0">Fitness Goals</NuxtLink>
                     </li>
                     <li>
@@ -33,6 +33,7 @@
                     <li>
                     <NuxtLink to="/age" class="block py-2 pl-3 pr-4 font-bold rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0">Age Group</NuxtLink>
                     </li>
+                    -->
                 </ul>
             </div>
         </div>
