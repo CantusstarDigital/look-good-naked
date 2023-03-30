@@ -3,8 +3,6 @@
     <div id="mc_embed_signup">
         <form action="https://look-good-nood.us21.list-manage.com/subscribe/post?u=ae94acb67064bda98286c2bc1&amp;id=b3999d1df7&amp;f_id=00db92e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
             <div id="mc_embed_signup_scroll">
-            
-                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 
                 <div class="mc-field-group">
                     <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
