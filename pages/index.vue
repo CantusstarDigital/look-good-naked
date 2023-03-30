@@ -2,7 +2,7 @@
     <div>
 
         <section class="py-20">
-            <div class="container mx-auto px-6 md:px-8 flex flex-col gap-10">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Fitness Goals</h2>
                     <p>Welcome to our Fitness Goals hub, where we empower you to unlock your potential and achieve your health and wellness aspirations.</p>
@@ -50,7 +50,7 @@
         </section>
 
         <section class="py-20 bg-slate-50">
-            <div class="container mx-auto px-6 md:px-8 flex flex-col gap-10">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Dietary Preferences</h2>
                     <p>Welcome to your Dietary Preferences hub, where we delve into the world of popular diets and help you navigate your unique nutritional needs.</p>
@@ -98,7 +98,7 @@
         </section>
 
         <section class="py-20">
-            <div class="container mx-auto px-6 md:px-8 flex flex-col gap-10">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Lifestyle Factors</h2>
                     <p>Discover Your Ideal Diet: A Comprehensive Guide to Popular Dietary Preferences.</p>
@@ -146,7 +146,7 @@
         </section>
 
         <section class="py-20 bg-slate-50">
-            <div class="container mx-auto px-6 md:px-8 flex flex-col gap-10">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Age Groups</h2>
                     <p>Discover Your Ideal Diet: A Comprehensive Guide to Popular Dietary Preferences.</p>
@@ -194,7 +194,7 @@
         </section>
 
         <section class="py-20">
-            <div class="container mx-auto px-6 md:px-8 flex flex-col gap-10">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Health Conditions</h2>
                     <p>Discover Your Ideal Diet: A Comprehensive Guide to Popular Dietary Preferences.</p>

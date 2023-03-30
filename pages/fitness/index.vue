@@ -1,7 +1,7 @@
 <template>
 
     <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/fitness.jpg')] overflow-hidden relative">
-        <section class="container mx-auto px-6 md:px-8 py-20 relative z-[2]">
+        <section class="max-w-7xl mx-auto px-6 md:px-8 py-20 relative z-[2]">
             <div class="w-full lg:w-1/2 lg:pr-20 relative group">
                 <div class="flex flex-col gap-6">
                     <h1 class="font-bold opacity-70">Your Fitness Goals</h1>
@@ -18,7 +18,7 @@
     </header>
 
 
-    <div class="mt-20 mb-20 container mx-auto px-6 md:px-8">
+    <div class="mt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
         <div class="max-w-2xl flex flex-col gap-4">
             <p class="text-xl font-semibold">Welcome to our Fitness Goals hub, where we empower you to unlock your potential and achieve your health and wellness aspirations.</p>
             <p>This comprehensive resource provides expert guidance on goal setting, workout routines, and strategies tailored to various fitness levels, all designed to help you stay motivated and on track.</p> 
@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <div class="mt-20 mb-20 container mx-auto px-6 md:px-8">
+    <div class="mt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
 
         <section class="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20">
 

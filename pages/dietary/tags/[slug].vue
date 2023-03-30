@@ -1,12 +1,12 @@
 
 <template>
 
-    <header class="container mx-auto px-6 md:px-8 py-20">
+    <header class="max-w-7xl mx-auto px-6 md:px-8 py-20">
       <div class="font-semibold text-slate-500">Topic specific</div>
       <h1 class="mt-4 text-slate-900 font-extrabold text-4xl sm:text-5xl tracking-tight">Insights on {{ slug }}</h1>
     </header>
 
-    <div class="pt-20 mb-20 container mx-auto px-6 md:px-8">
+    <div class="pt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
       <section class="mb-20 grid grid-cols-3 gap-20 sm:mb-32 sm:gap-32 md:mb-40 md:gap-40">
 
               <!-- Render list of all articles in ./content/dietary using `path` -->

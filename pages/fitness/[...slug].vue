@@ -1,7 +1,7 @@
 <template>
 
 
-  <header v-if="data.article" class="container mx-auto px-6 md:px-8 py-20">
+  <header v-if="data.article" class="max-w-7xl mx-auto px-6 md:px-8 py-20">
       <div class="max-w-4xl flex flex-col gap-3">
         <div class="font-semibold text-xs text-slate-500">{{ formatDate(data.article.created_At) }}</div> 
         <h1 class="text-slate-900 font-black text-4xl sm:text-5xl tracking-tight">{{ data.article.title }}</h1>
@@ -12,7 +12,7 @@
       </div>
   </header>
 
-  <div class="relative mx-auto flex container justify-center sm:px-2 lg:px-8 xl:px-12">
+  <div class="relative mx-auto flex max-w-7xl justify-center sm:px-2 lg:px-8 xl:px-12">
 
     <div class="hidden lg:relative lg:block lg:flex-none">
         <div class="absolute inset-y-0 right-0 w-[50vw] bg-slate-50"></div>

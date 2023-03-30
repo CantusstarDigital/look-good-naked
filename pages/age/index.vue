@@ -1,7 +1,7 @@
 <template>
 
     <header class="bg-cover bg-center bg-no-repeat grayscale bg-[url('https://images.unsplash.com/photo-1595857997852-6cdae332b05b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] overflow-hidden relative">
-        <section class="container mx-auto px-6 md:px-8 py-20 md:py-40 relative z-[2]">
+        <section class="max-w-7xl mx-auto px-6 md:px-8 py-20 md:py-40 relative z-[2]">
             <div class="w-full lg:w-1/2 lg:pr-20 relative group">
                 <h1 class="font-semibold text-slate-50 opacity-60">Age Groups</h1>
                 <div class="font-extrabold text-4xl sm:text-5xl tracking-tight text-slate-50 mt-4">Writing on software design, company building, and digital transformation.</div>
@@ -13,7 +13,7 @@
         <div class="absolute top-0 left-0 w-full lg:w-1/2 h-full z-[1] backdrop-blur-xl bg-slate-900/60 shadow-2xl border-r border-slate-50/[0.06]"></div>
     </header>
 
-    <div class="pt-20 mb-20 container mx-auto px-6 md:px-8">
+    <div class="pt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
 
         <section class="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20">
 

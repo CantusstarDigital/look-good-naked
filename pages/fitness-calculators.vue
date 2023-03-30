@@ -1,7 +1,7 @@
 <template>
 
     <header class="bg-cover bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80')] overflow-hidden relative"> 
-        <section class="container mx-auto px-6 md:px-8 py-20 relative z-[2]">
+        <section class="max-w-7xl mx-auto px-6 md:px-8 py-20 relative z-[2]">
             <div class="w-full lg:w-1/2 lg:pr-20 relative group">
                 <div class="flex flex-col gap-6">
                     <h1 class="font-bold text-white opacity-70">Fitness Calculators</h1>
@@ -17,7 +17,7 @@
         <div class="absolute top-0 left-0 w-full lg:w-1/2 h-full z-[1] backdrop-blur-xl bg-slate-900/60 shadow-2xl border-r border-slate-50/[0.06]"></div>
     </header>
 
-    <div class="mt-20 mb-20 container mx-auto px-6 md:px-8">
+    <div class="mt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
         <div class="max-w-2xl flex flex-col gap-4">
             <p class="text-xl font-semibold">Welcome to the Ultimate Fitness Toolset – your one-stop shop for all the essential calculators designed to help you achieve your fitness goals!</p>
             <p>Whether you're looking to lose weight, gain muscle, or improve your overall health, these user-friendly tools will make it easy to track your progress, optimise your workouts, and fine-tune your nutrition.</p> 
@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <div class="mt-20 mb-20 container mx-auto px-6 md:px-8">
+    <div class="mt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
         <section class="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20">
             
             <article class="card relative flex flex-col gap-4">
