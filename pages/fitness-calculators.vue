@@ -26,7 +26,7 @@
     </div>
 
     <div class="mt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
-        <section class="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20">
+        <section class="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
             
             <article class="card relative flex flex-col gap-4">
                 <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">

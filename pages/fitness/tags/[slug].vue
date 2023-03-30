@@ -7,7 +7,7 @@
     </header>
 
     <div class="pt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
-      <section class="mb-20 grid grid-cols-3 gap-20 sm:mb-32 sm:gap-32 md:mb-40 md:gap-40">
+      <section class="mb-20 grid grid-cols-3 gap-10 sm:mb-32 sm:gap-32 md:mb-40 md:gap-40">
 
               <!-- Render list of all articles in ./content/age using `path` -->
               <!-- Provide only defined fieldsin the `:query` prop -->

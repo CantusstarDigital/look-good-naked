@@ -7,7 +7,7 @@
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Fitness Goals</h2>
                     <p>Welcome to our Fitness Goals hub, where we empower you to unlock your potential and achieve your health and wellness aspirations.</p>
                 </div>
-                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     <ContentList path="/fitness" :query="{
                         only: ['title', 'description', 'tags', '_path', 'img', 'created_At'],
                         where: {
@@ -55,7 +55,7 @@
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Dietary Preferences</h2>
                     <p>Welcome to your Dietary Preferences hub, where we delve into the world of popular diets and help you navigate your unique nutritional needs.</p>
                 </div>
-                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     <ContentList path="/dietary" :query="{
                         only: ['title', 'description', 'tags', '_path', 'img', 'created_At'],
                         where: {
@@ -103,7 +103,7 @@
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Lifestyle Factors</h2>
                     <p>Discover Your Ideal Diet: A Comprehensive Guide to Popular Dietary Preferences.</p>
                 </div>
-                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     <ContentList path="/lifestyle" :query="{
                         only: ['title', 'description', 'tags', '_path', 'img', 'created_At'],
                         where: {
@@ -151,7 +151,7 @@
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Age Groups</h2>
                     <p>Discover Your Ideal Diet: A Comprehensive Guide to Popular Dietary Preferences.</p>
                 </div>
-                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     <ContentList path="/age" :query="{
                         only: ['title', 'description', 'tags', '_path', 'img', 'created_At'],
                         where: {
@@ -199,7 +199,7 @@
                     <h2 class="text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight">Health Conditions</h2>
                     <p>Discover Your Ideal Diet: A Comprehensive Guide to Popular Dietary Preferences.</p>
                 </div>
-                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                     <ContentList path="/health" :query="{
                         only: ['title', 'description', 'tags', '_path', 'img', 'created_At'],
                         where: {
