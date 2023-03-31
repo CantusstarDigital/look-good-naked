@@ -4,30 +4,30 @@
             <div class="flex flex-col gap-6">
 
                 <div>
-                    <NuxtLink to="/" class="flex items-center h-14 w-14">
-                        <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Look Good Naked" title="Look Good Naked" loading="lazy" />
+                    <NuxtLink to="/" class="flex items-center h-14 w-14 gap-2">
+                        <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="lazy" />
                     </NuxtLink>
                 </div>
 
-                <div class="space-x-6">
-                    <NuxtLink to="/fitness" class="font-bold text-2xl p-5 pl-0 hover:text-black">Fitness Goals</NuxtLink>
-                    <NuxtLink to="/dietary" class="font-bold text-2xl p-5 hover:text-black">Dietary Preferences</NuxtLink>
-                    <NuxtLink to="/lifestyle" class="font-bold text-2xl p-5 hover:text-black">Lifestyle Factors</NuxtLink>
-                    <NuxtLink to="/health" class="font-bold text-2xl p-5 hover:text-black">Health Conditions</NuxtLink>
-                    <NuxtLink to="/age" class="font-bold text-2xl p-5 hover:text-black">Age Group</NuxtLink>
+                <div class="">                  
+                    <NuxtLink to="/dietary" class="font-hand text-xl px-4 pl-0 inline-flex leading-10 transition-all hover:text-black">Dietary Preferences</NuxtLink>
+                    <NuxtLink to="/fitness" class="font-hand text-xl px-4 inline-flex leading-10 transition-all hover:text-black">Fitness Goals</NuxtLink>
+                    <NuxtLink to="/lifestyle" class="font-hand text-xl px-4 inline-flex leading-10 transition-all hover:text-black">Lifestyle Factors</NuxtLink>
+                    <NuxtLink to="/health" class="font-hand text-xl px-4 inline-flex leading-10 transition-all hover:text-black">Health Conditions</NuxtLink>
+                    <NuxtLink to="/age" class="font-hand text-xl px-4 inline-flex leading-10 transition-all hover:text-black">Age Groups</NuxtLink>
                 </div>
 
-                <div class="space-x-6">
-                    <NuxtLink to="/fitness" class="font-bold text-sm p-3 pl-0 hover:text-black">About Us</NuxtLink>
-                    <NuxtLink to="/dietary" class="font-bold text-sm p-3 hover:text-black">Contact Us</NuxtLink>
-                    <NuxtLink to="/fitness-calculators" class="font-bold text-sm p-3 hover:text-black">Fitness Calculators</NuxtLink>
-                    <NuxtLink to="/lifestyle" class="font-bold text-sm p-3 hover:text-black">Newsletters</NuxtLink>
-                    <NuxtLink to="/health" class="font-bold text-sm p-3 hover:text-black">Sitemap</NuxtLink>
+                <div class="">
+                    <NuxtLink to="/fitness" class="font-bold text-sm p-4 pl-0 hover:text-black">About Us</NuxtLink>
+                    <NuxtLink to="/dietary" class="font-bold text-sm p-4 hover:text-black">Contact Us</NuxtLink>
+                    <NuxtLink to="/fitness-calculators" class="font-bold text-sm p-4 hover:text-black">Fitness Calculators</NuxtLink>
+                    <NuxtLink to="/lifestyle" class="font-bold text-sm p-4 hover:text-black">Newsletters</NuxtLink>
+                    <NuxtLink to="/health" class="font-bold text-sm p-4 hover:text-black">Sitemap</NuxtLink>
                 </div>
 
                 <div class="max-w-2xl text-xs flex flex-col gap-4">
                     <p>The content on our website serves as a resource for informational and educational purposes only and should not be construed as a replacement for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional to guide your health needs and concerns.</p>
-                    <p>&copy; {{ new Date().getFullYear() }} LookGoodNaked — All rights reserved</p>
+                    <p class="font-semibold">&copy; {{ new Date().getFullYear() }} LookGoodNood — All rights reserved</p>
                 </div>
 
                 <div class="flex space-x-6">

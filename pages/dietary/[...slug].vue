@@ -11,7 +11,6 @@
           </div> 
           <h1 class="text-slate-900 font-extrabold text-4xl sm:text-5xl tracking-tight">{{ data.article.title }}</h1>
           <p class="text-xl text-slate-500 font-bold">{{ data.article.description }}</p>
-          <div class="addthis_inline_share_toolbox"></div>
           <div class="space-x-2">
             <NuxtLink :to="`/dietary/tags/${tag}`" v-for="(tag, n) in data.article.tags" :key="n" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
           </div>

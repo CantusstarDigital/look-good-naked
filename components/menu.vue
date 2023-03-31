@@ -1,42 +1,39 @@
 <template>
     
-    <nav class="navbar w-full sticky top-0 z-50 py-2.5 bg-white shadow">
+    <nav class="navbar w-full sticky top-0 z-20 py-2.5 bg-white shadow">
         <div class="max-w-7xl px-6 md:px-8 flex flex-wrap items-center justify-between mx-auto">
 
-            <NuxtLink to="/" class="flex items-center gap-2">
+            <NuxtLink to="/" class="flex items-center gap-2 group">
                 <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="eager" />
-                <span class="self-center text-sm font-semibold whitespace-nowrap text-slate-900">LookGoodNood</span>
+                <span class="hidden lg:flex self-center font-hand whitespace-nowrap text-slate-900 transition-opacity opacity-0 group-hover:opacity-100">LookGoodNood</span>
             </NuxtLink>
 
-            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-                </svg>
+            <button class="md:hidden font-hand px-2 leading-10 rounded transition-all bg-gray-50 hover:bg-gray-100 hover:text-black" type="button" data-drawer-target="drawer-right" data-drawer-show="drawer-right" data-drawer-placement="right" aria-controls="drawer-right">
+                Menu
             </button>
 
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
-                    
+            <div class="hidden w-full md:block md:w-auto">
+                <ul class="flex items-center gap-x-8">                  
                     <li>
-                    <NuxtLink to="/dietary" class="block py-2 pl-3 pr-4 font-bold rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0">Dietary Preferences</NuxtLink>
-                    </li>
-                    <!--<li>
-                    <NuxtLink to="/fitness" class="block py-2 pl-3 pr-4 font-bold rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0">Fitness Goals</NuxtLink>
+                        <NuxtLink to="/dietary" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Dietary</NuxtLink>
                     </li>
                     <li>
-                    <NuxtLink to="/lifestyle" class="block py-2 pl-3 pr-4 font-bold rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0">Lifestyle Factors</NuxtLink>
+                        <NuxtLink to="/fitness" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Fitness</NuxtLink>
                     </li>
                     <li>
-                    <NuxtLink to="/health" class="block py-2 pl-3 pr-4 font-bold rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0">Health Conditions</NuxtLink>
+                        <NuxtLink to="/lifestyle" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Lifestyle</NuxtLink>
                     </li>
                     <li>
-                    <NuxtLink to="/age" class="block py-2 pl-3 pr-4 font-bold rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0">Age Group</NuxtLink>
+                        <NuxtLink to="/health" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Health</NuxtLink>
                     </li>
-                    -->
+                    <li>
+                        <NuxtLink to="/age" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Age</NuxtLink>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-30 hidden"></div>
 
 </template>
