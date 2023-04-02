@@ -51,54 +51,7 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
     article: await article,
     surround: await surround,
   };
-});
-
-// destrucure `prev` and `next` value from data
-const [prev, next] = data.value.surround;
-
-// function to format date
-const formatDate = (date) => {
-  const d = new Date(date);
-  const year = d.getFullYear();
-  const monthNames = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
-  ];
-  const month = monthNames[d.getMonth()];
-  const day = d.getDate();
-
-  return `${day} ${month} ${year}`;
-};
-
-// Load the Bootstrap JavaScript library as a client-side module
-const loadBootstrap = async () => {
-  const { ScrollSpy } = await import('bootstrap');
-  return ScrollSpy;
-};
-
-onMounted(async () => {
-  const targets = document.querySelectorAll('#tocNav a[href^="#"]');
-  targets.forEach(target => {
-    target.addEventListener('click', (event) => {
-      const id = target.getAttribute('href');
-      scrollTo(id);
-    });
-  })
-  if (process.client) {
-    const ScrollSpy = await loadBootstrap();
-    const scrollSpy = new ScrollSpy(document.body, {
-      target: '#tocNav',
-      offset: 1000
-    })
-  }
-});
-
-const scrollTo = (id) => {
-  const target = document.querySelector(id);
-  target.scrollIntoView({
-    behavior: 'smooth'
-  });
-};
+})
 
 // set the meta
 useHead({
