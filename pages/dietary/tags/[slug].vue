@@ -6,8 +6,8 @@
       <h1 class="mt-4 text-slate-900 font-extrabold text-4xl sm:text-5xl tracking-tight">Insights on {{ slug }}</h1>
     </header>
 
-    <div class="pt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
-      <section class="mb-20 grid grid-cols-3 gap-10 sm:mb-32 sm:gap-32 md:mb-40 md:gap-40">
+    <div class="mb-20 max-w-7xl mx-auto px-6 md:px-8">
+      <section class="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
 
               <!-- Render list of all articles in ./content/dietary using `path` -->
               <!-- Provide only defined fieldsin the `:query` prop -->
@@ -25,18 +25,25 @@
               >
               <!-- Default list slot -->
               <template v-slot="{ list }">
-                <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
-                    <div class="absolute -inset-y-4 -inset-x-4 z-0 scale-95 bg-slate-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4 rounded-xl"></div>
-                    <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
-                        <NuxtLink :to="article._path" class="w-full h-48">
-                            <img :src="`${article.img}`" class="rounded object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
-                        </NuxtLink>
-                        <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
-                            <h2 class="text-xl text-slate-900 font-extrabold">{{ article.title }}</h2>
-                        </NuxtLink>
-                    </div>
-                </article>
-              </template>
+                        <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
+                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
+                                <NuxtLink :to="article._path" class="w-full h-48">
+                                    <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                </NuxtLink>
+                                <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
+                                    <h2 class="text-xl text-slate-900 font-extrabold">{{ article.title }}</h2>
+                                    <div class="text-xs font-semibold flex gap-1 items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        {{ formatDate(article.created_At) }}
+                                    </div>
+                                    <div class="line-clamp-2">{{ article.description }}</div>
+                                    
+                                </NuxtLink>
+                            </div>
+                        </article>
+                    </template>
 
               <!-- Not found slot to display message when no content us is found -->
               <template #not-found>
@@ -71,8 +78,8 @@ const formatDate = (date) => {
 };
 
 // set meta for page
-const title = ref(`Dotslash articles about ${slug}`)
-const description = ref(`Dotslash articles about ${slug}`)
+const title = ref(`Articles about ${slug}`)
+const description = ref(`Articles about ${slug}`)
 
 useHead({
   title: title,

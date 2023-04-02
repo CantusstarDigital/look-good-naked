@@ -45,17 +45,6 @@
                 </div>
             </article>
 
-            <article class="card relative flex flex-col gap-4">
-                <div class="relative z-[2] flex flex-col bg-white shadow hover:shadow-lg h-full">
-                    <NuxtLink to="/bmr-calculator" class="w-full h-48">
-                        <img src="/img/bmr-calculator.jpg" class="object-cover w-full h-48" width="300px" height="300px" alt="BMR Calculator" title="BMR Calculator" loading="lazy" />
-                    </NuxtLink>
-                    <NuxtLink to="/bmr-calculator" class="flex flex-col gap-3 p-3">
-                        <h2 class="text-xl text-slate-900 font-extrabold">BMR Calculator</h2>
-                    </NuxtLink>
-                </div>
-            </article>
-
         </section>
     </div>
 

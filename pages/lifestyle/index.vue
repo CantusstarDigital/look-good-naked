@@ -1,16 +1,21 @@
 <template>
 
     <header class="bg-cover bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80')] overflow-hidden relative">
-        <section class="max-w-7xl mx-auto px-6 md:px-8 py-20 md:py-40 relative z-[2]">
-            <div class="w-full lg:w-1/2 lg:pr-20 relative group">
-                <h1 class="font-semibold text-slate-50 opacity-60">Lifestyle Factors</h1>
-                <div class="font-extrabold text-4xl sm:text-5xl tracking-tight text-slate-50 mt-4">Writing on software design, company building, and digital transformation.</div>
-                <div class="mt-6">
-                    <Tags />
+        <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2]">
+            <div class="w-full lg:w-2/3 lg:pr-20 relative group">
+                <div class="p-10 backdrop-blur-md bg-black/50 text-white shadow-xl">
+                    <div class="flex flex-col gap-5">
+                        <h1 class="opacity-80 font-hand text-xl">Lifestyle Factors</h1>
+                        <div class="font-extrabold text-3xl xl:text-4xl tracking-tight">...</div>
+                        <div class="space-x-2">
+                            <span v-for="(tag, n) in articleTags" :key="n">
+                                <NuxtLink :to="`/lifestyle/tags/${tag}`" class="group font-hand inline-flex items-center h-6 rounded-full text-sm whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="absolute top-0 left-0 w-full lg:w-1/2 h-full z-[1] backdrop-blur-xl bg-slate-900/60 shadow-2xl border-r border-slate-50/[0.06]"></div>
     </header>
 
     <div class="pt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">

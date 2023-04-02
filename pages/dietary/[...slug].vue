@@ -47,7 +47,7 @@
             </div>
           </div>
 
-          <article class="prose prose-a:no-underline prose-a:font-bold prose-headings:font-bold">
+          <article class="prose prose-a:no-underline prose-h2:font-hand">
             <!-- render document coming from query -->
             <ContentRenderer :value="data.article">
 
@@ -102,6 +102,36 @@ const formatDate = (date) => {
   const day = d.getDate();
 
   return `${day} ${month} ${year}`;
+};
+
+// Load the Bootstrap JavaScript library as a client-side module
+const loadBootstrap = async () => {
+    const { ScrollSpy } = await import('bootstrap');
+    return ScrollSpy;
+};
+
+onMounted(async () => {
+    const targets = document.querySelectorAll('#tocNav a[href^="#"]');
+    targets.forEach(target => {
+        target.addEventListener('click', (event) => {
+            const id = target.getAttribute('href');
+            scrollTo(id);
+        });
+    })
+    if (process.client) {
+        const ScrollSpy = await loadBootstrap();
+        const scrollSpy = new ScrollSpy(document.body, {
+            target: '#tocNav',
+            offset: 1000
+        })
+    }
+});
+
+const scrollTo = (id) => {
+    const target = document.querySelector(id);
+    target.scrollIntoView({
+        behavior: 'smooth'
+    });
 };
 
 // set the meta

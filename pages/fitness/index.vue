@@ -1,20 +1,21 @@
 <template>
 
     <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/fitness.jpg')] overflow-hidden relative">
-        <section class="max-w-7xl mx-auto px-6 md:px-8 py-20 relative z-[2]">
-            <div class="w-full lg:w-1/2 lg:pr-20 relative group">
-                <div class="flex flex-col gap-6">
-                    <h1 class="font-bold opacity-70">Your Fitness Goals</h1>
-                    <div class="font-extrabold text-4xl sm:text-5xl tracking-tight">Unlock Your Potential: <br>The Ultimate Guide to Achieving Your Fitness Goals</div>
-                    <div class="space-x-2">
-                        <span v-for="(tag, n) in articleTags" :key="n">
-                            <NuxtLink :to="`/fitness/tags/${tag}`" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
-                        </span>
+        <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2]">
+            <div class="w-full lg:w-2/3 lg:pr-20 relative group">
+                <div class="p-10 backdrop-blur-md bg-black/50 text-white shadow-xl">
+                    <div class="flex flex-col gap-5">
+                        <h1 class="opacity-80 font-hand text-xl">Your Fitness Goals</h1>
+                        <div class="font-extrabold text-3xl xl:text-4xl tracking-tight">Unlock Your Potential: <br>The Ultimate Guide to Achieving Your Fitness Goals</div>
+                        <div class="space-x-2">
+                            <span v-for="(tag, n) in articleTags" :key="n">
+                                <NuxtLink :to="`/fitness/tags/${tag}`" class="group font-hand inline-flex items-center h-6 rounded-full text-sm whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="absolute top-0 left-0 w-full lg:w-1/2 h-full z-[1] backdrop-blur-md bg-white/90"></div>
     </header>
 
 

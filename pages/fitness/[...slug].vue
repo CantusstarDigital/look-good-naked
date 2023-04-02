@@ -3,11 +3,16 @@
 
   <header v-if="data.article" class="max-w-7xl mx-auto px-6 md:px-8 py-20">
       <div class="max-w-4xl flex flex-col gap-3">
-        <div class="font-semibold text-xs text-slate-500">{{ formatDate(data.article.created_At) }}</div> 
-        <h1 class="text-slate-900 font-black text-4xl sm:text-5xl tracking-tight">{{ data.article.title }}</h1>
+        <div class="text-xs font-semibold flex gap-1 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          {{ formatDate(data.article.created_At) }}
+        </div> 
+        <h1 class="text-slate-900 font-extrabold text-4xl sm:text-5xl tracking-tight">{{ data.article.title }}</h1>
         <p class="text-xl text-slate-500 font-bold">{{ data.article.description }}</p>
         <div class="space-x-2">
-          <NuxtLink :to="`/dietary/tags/${tag}`" v-for="(tag, n) in data.article.tags" :key="n" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
+          <NuxtLink :to="`/fitness/tags/${tag}`" v-for="(tag, n) in data.article.tags" :key="n" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
         </div>
       </div>
   </header>
@@ -42,7 +47,7 @@
           </div>
         </div>
 
-        <article class="prose prose-a:no-underline prose-a:font-bold prose-headings:font-bold">
+        <article class="prose prose-a:no-underline prose-h2:font-hand">
           <!-- render document coming from query -->
           <ContentRenderer :value="data.article">
 
@@ -69,8 +74,6 @@
 
 
 <script setup>
-import { onMounted } from 'vue';
-
 const { path } = useRoute();
 const { data } = await useAsyncData(`content-${path}`, async () => {
 // fetch document where the document path matches with the cuurent route
@@ -89,46 +92,46 @@ const [prev, next] = data.value.surround;
 
 // function to format date
 const formatDate = (date) => {
-  const d = new Date(date);
-  const year = d.getFullYear();
-  const monthNames = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
-  ];
-  const month = monthNames[d.getMonth()];
-  const day = d.getDate();
+const d = new Date(date);
+const year = d.getFullYear();
+const monthNames = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
+const month = monthNames[d.getMonth()];
+const day = d.getDate();
 
-  return `${day} ${month} ${year}`;
+return `${day} ${month} ${year}`;
 };
 
 // Load the Bootstrap JavaScript library as a client-side module
 const loadBootstrap = async () => {
-    const { ScrollSpy } = await import('bootstrap');
-    return ScrollSpy;
+  const { ScrollSpy } = await import('bootstrap');
+  return ScrollSpy;
 };
 
 onMounted(async () => {
-    const targets = document.querySelectorAll('#tocNav a[href^="#"]');
-    targets.forEach(target => {
-        target.addEventListener('click', (event) => {
-            const id = target.getAttribute('href');
-            scrollTo(id);
-        });
-    })
-    if (process.client) {
-        const ScrollSpy = await loadBootstrap();
-        const scrollSpy = new ScrollSpy(document.body, {
-            target: '#tocNav',
-            offset: 1000
-        })
-    }
+  const targets = document.querySelectorAll('#tocNav a[href^="#"]');
+  targets.forEach(target => {
+      target.addEventListener('click', (event) => {
+          const id = target.getAttribute('href');
+          scrollTo(id);
+      });
+  })
+  if (process.client) {
+      const ScrollSpy = await loadBootstrap();
+      const scrollSpy = new ScrollSpy(document.body, {
+          target: '#tocNav',
+          offset: 1000
+      })
+  }
 });
 
 const scrollTo = (id) => {
-    const target = document.querySelector(id);
-    target.scrollIntoView({
-        behavior: 'smooth'
-    });
+  const target = document.querySelector(id);
+  target.scrollIntoView({
+      behavior: 'smooth'
+  });
 };
 
 // set the meta

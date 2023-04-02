@@ -5,7 +5,7 @@
             <div class="w-full lg:w-2/3 lg:pr-20 relative group">
                 <div class="p-10 backdrop-blur-md bg-white/50 text-black shadow-xl">
                     <div class="flex flex-col gap-5">
-                        <h1 class="font-extrabold text-4xl sm:text-5xl tracking-tight">BMI Calculator</h1>
+                        <h1 class="font-extrabold text-4xl sm:text-5xl tracking-tight">Calorie Calculator</h1>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
             </div>
             <div>
                 <div class="xl:sticky top-24">
-                    <BmiCalculator />
+                    <CalorieCalculator />
                 </div>
             </div>
         </div>

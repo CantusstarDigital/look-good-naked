@@ -1,87 +1,92 @@
 
 <template>
 
-    <header class="max-w-7xl mx-auto px-6 md:px-8 py-20">
-      <div class="font-semibold text-slate-500">Topic specific</div>
-      <h1 class="mt-4 text-slate-900 font-extrabold text-4xl sm:text-5xl tracking-tight">Insights on {{ slug }}</h1>
-    </header>
+  <header class="max-w-7xl mx-auto px-6 md:px-8 py-20">
+    <div class="font-semibold text-slate-500">Topic specific</div>
+    <h1 class="mt-4 text-slate-900 font-extrabold text-4xl sm:text-5xl tracking-tight">Insights on {{ slug }}</h1>
+  </header>
 
-    <div class="pt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
-      <section class="mb-20 grid grid-cols-3 gap-10 sm:mb-32 sm:gap-32 md:mb-40 md:gap-40">
+  <div class="mb-20 max-w-7xl mx-auto px-6 md:px-8">
+    <section class="mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
 
-              <!-- Render list of all articles in ./content/age using `path` -->
-              <!-- Provide only defined fieldsin the `:query` prop -->
-              <ContentList
-                path="/health"
-                :query="{
-                  only: ['title', 'description', 'tags', '_path', 'img', 'created_At'],
-                  where: {
-                    tags: {
-                      $contains: filter,
-                    },
+            <!-- Render list of all articles in ./content/dietary using `path` -->
+            <!-- Provide only defined fieldsin the `:query` prop -->
+            <ContentList
+              path="/health"
+              :query="{
+                only: ['title', 'description', 'tags', '_path', 'img', 'created_At'],
+                where: {
+                  tags: {
+                    $contains: filter,
                   },
-                  $sensitivity: 'base',
-                }"
-              >
-              <!-- Default list slot -->
-              <template v-slot="{ list }">
-                <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
-                    <div class="absolute -inset-y-4 -inset-x-4 z-0 scale-95 bg-slate-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4 rounded-xl"></div>
-                    <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
-                        <div class="font-semibold text-xs text-slate-500">{{ formatDate(article.created_At) }}</div>
-                        <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
-                            <h2 class="text-xl text-slate-900 font-extrabold">{{ article.title }}</h2>
-                            <p class="mt-4 max-w-3xl space-y-6 line-clamp-4">{{ article.description }}</p>
-                        </NuxtLink>
-                        <div class="flex gap-1">
-                            <NuxtLink :to="`/health/tags/${tag}`" v-for="(tag, n) in article.tags" :key="n" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
-                        </div>
-                    </div>
-                </article>
-              </template>
+                },
+                $sensitivity: 'base',
+              }"
+            >
+            <!-- Default list slot -->
+            <template v-slot="{ list }">
+                      <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
+                          <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
+                              <NuxtLink :to="article._path" class="w-full h-48">
+                                  <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                              </NuxtLink>
+                              <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
+                                  <h2 class="text-xl text-slate-900 font-extrabold">{{ article.title }}</h2>
+                                  <div class="text-xs font-semibold flex gap-1 items-center">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                      </svg>
+                                      {{ formatDate(article.created_At) }}
+                                  </div>
+                                  <div class="line-clamp-2">{{ article.description }}</div>
+                                  
+                              </NuxtLink>
+                          </div>
+                      </article>
+                  </template>
 
-              <!-- Not found slot to display message when no content us is found -->
-              <template #not-found>
-                <p>No articles found.</p>
-              </template>
-            </ContentList>
+            <!-- Not found slot to display message when no content us is found -->
+            <template #not-found>
+              <p>No articles found.</p>
+            </template>
+          </ContentList>
 
-      </section>
-    </div>
-  </template>
+    </section>
+  </div>
+</template>
 
 
 <script setup>
 // get current route
 const {
-  params: { slug },
+params: { slug },
 } = useRoute();
 const filter = slug.split(",");
 
 // function to format date
 const formatDate = (date) => {
-  const d = new Date(date);
-  const year = d.getFullYear();
-  const monthNames = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
-  ];
-  const month = monthNames[d.getMonth()];
-  const day = d.getDate();
+const d = new Date(date);
+const year = d.getFullYear();
+const monthNames = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December'
+];
+const month = monthNames[d.getMonth()];
+const day = d.getDate();
 
-  return `${day} ${month} ${year}`;
+return `${day} ${month} ${year}`;
 };
 
 // set meta for page
-const title = ref(`Dotslash articles about ${slug}`)
-const description = ref(`Dotslash articles about ${slug}`)
+const title = ref(`Articles about ${slug}`)
+const description = ref(`Articles about ${slug}`)
 
 useHead({
-  title: title,
-  meta: [
-    { name: "description", content: description },
-    { hid: "og:title", property: "og:title", content: title },
-    { hid: "og:description", property: "og:description", content: description },
-  ],
+title: title,
+meta: [
+  { name: "description", content: description },
+  { hid: "og:title", property: "og:title", content: title },
+  { hid: "og:description", property: "og:description", content: description },
+],
 });
 </script>
