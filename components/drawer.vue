@@ -9,17 +9,13 @@
             <ul class="flex flex-col gap-2">                  
                 <li><NuxtLink to="/dietary" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Dietary Preferences</NuxtLink></li>
                 <li><NuxtLink to="/fitness" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Fitness Goals</NuxtLink></li>
-                <li><NuxtLink to="/lifestyle" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Lifestyle Factors</NuxtLink></li>
-                <li><NuxtLink to="/health" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Health Conditions</NuxtLink></li>
-                <li><NuxtLink to="/age" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Age Groups</NuxtLink></li>
             </ul>
 
             <ul class="flex flex-col gap-2">
-                <li><NuxtLink to="/fitness" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">About Us</NuxtLink></li>
-                <li><NuxtLink to="/dietary" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Contact Us</NuxtLink></li>
-                <li><NuxtLink to="/fitness-calculators" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Fitness Calculators</NuxtLink></li>
-                <li><NuxtLink to="/lifestyle" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Newsletters</NuxtLink></li>
-                <li><NuxtLink to="/health" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Sitemap</NuxtLink></li>
+                <li><NuxtLink to="/about-us" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">About Us</NuxtLink></li>
+                <li><NuxtLink to="/contact-us" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Contact Us</NuxtLink></li>
+                <li><NuxtLink to="/newsletter" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Newsletters</NuxtLink></li>
+                <li><NuxtLink to="/sitemap" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Sitemap</NuxtLink></li>
             </ul>
 
             <div class="flex justify-between">
@@ -61,7 +57,7 @@
 
             <div class="flex flex-col gap-6">
                 <p class="text-xs">The content on our website serves as a resource for informational and educational purposes only and should not be construed as a replacement for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional to guide your health needs and concerns.</p>
-                <p class="text-xs font-semibold">&copy; {{ new Date().getFullYear() }} LookGoodNood — All rights reserved</p>
+                <p class="text-xs font-semibold">&copy; {{ new Date().getFullYear() }} LookGoodNood — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink>.</p>
             </div>
 
         </div>

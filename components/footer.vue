@@ -27,7 +27,7 @@
 
                 <div class="max-w-2xl text-xs flex flex-col gap-4">
                     <p>The content on our website serves as a resource for informational and educational purposes only and should not be construed as a replacement for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional to guide your health needs and concerns.</p>
-                    <p class="font-semibold">&copy; {{ new Date().getFullYear() }} LookGoodNood — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink></p>
+                    <p class="font-semibold">&copy; {{ new Date().getFullYear() }} LookGoodNood — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink>.</p>
                 </div>
 
                 <div class="flex space-x-6">
