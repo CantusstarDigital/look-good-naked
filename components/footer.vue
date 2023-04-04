@@ -10,18 +10,19 @@
                 </div>
 
                 <div class="">                  
-                    <NuxtLink to="/dietary" class="font-hand text-xl px-4 inline-flex leading-10 transition-all hover:text-black">Dietary Preferences</NuxtLink>
-                    <NuxtLink to="/fitness" class="font-hand text-xl px-4 inline-flex leading-10 transition-all hover:text-black">Fitness Goals</NuxtLink>
-                    <NuxtLink to="/lifestyle" class="font-hand text-xl px-4 inline-flex leading-10 transition-all hover:text-black">Lifestyle Factors</NuxtLink>
-                    <NuxtLink to="/health" class="font-hand text-xl px-4 inline-flex leading-10 transition-all hover:text-black">Health Conditions</NuxtLink>
-                    <NuxtLink to="/age" class="font-hand text-xl px-4 inline-flex leading-10 transition-all hover:text-black">Age Groups</NuxtLink>
+                    <NuxtLink to="/dietary" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Dietary Preferences</NuxtLink>
+                    <NuxtLink to="/fitness" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Fitness Goals</NuxtLink>
+                    <!--<NuxtLink to="/lifestyle" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Lifestyle Factors</NuxtLink>
+                    <NuxtLink to="/health" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Health Conditions</NuxtLink>
+                    <NuxtLink to="/age" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Age Groups</NuxtLink>-->
+                    <NuxtLink to="/tools" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Fitness Tools</NuxtLink>
                 </div>
 
                 <div class="">
-                    <NuxtLink to="/fitness" class="font-bold px-4 inline-flex leading-10 transition-all hover:text-black">About Us</NuxtLink>
-                    <NuxtLink to="/dietary" class="font-bold px-4 inline-flex leading-10 transition-all hover:text-black">Contact Us</NuxtLink>
-                    <NuxtLink to="/lifestyle" class="font-bold px-4 inline-flex leading-10 transition-all hover:text-black">Newsletters</NuxtLink>
-                    <NuxtLink to="/health" class="font-bold px-4 inline-flex leading-10 transition-all hover:text-black">Sitemap</NuxtLink>
+                    <NuxtLink to="/fitness" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">About Us</NuxtLink>
+                    <NuxtLink to="/dietary" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Contact Us</NuxtLink>
+                    <NuxtLink to="/newsletter" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Newsletters</NuxtLink>
+                    <NuxtLink to="/health" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Sitemap</NuxtLink>
                 </div>
 
                 <div class="max-w-2xl text-xs flex flex-col gap-4">

@@ -3,7 +3,7 @@
     <header class="bg-cover bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] overflow-hidden relative">
         <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2]">
             <div class="w-full lg:w-2/3 lg:pr-20 relative group">
-                <div class="p-10 backdrop-blur-md bg-black/50 text-white shadow-xl">
+                <div class="p-10 backdrop-blur-md bg-white/50 text-black border-2 border-black rounded-lg">
                     <div class="flex flex-col gap-5">
                         <h1 class="opacity-80 font-hand text-xl">Health Conditions</h1>
                         <div class="font-extrabold text-3xl xl:text-4xl tracking-tight">...</div>
@@ -39,7 +39,7 @@
                     <template v-slot="{ list }">
                         <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
                             <div class="absolute -inset-y-4 -inset-x-4 z-0 scale-95 bg-slate-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-4 rounded-xl"></div>
-                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
+                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black rounded-lg">
                                 <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
                                     <img :src="`${article.img}`" class="w-full rounded" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>

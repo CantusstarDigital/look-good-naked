@@ -87,6 +87,7 @@
     z-index: -2;
     top: 0;
     left: 0;
+    @apply rounded-lg;
 }
 .card:hover::after {
     transform: translate(-10px,10px);

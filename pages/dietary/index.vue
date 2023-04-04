@@ -3,7 +3,7 @@
     <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/dietary.jpg')] overflow-hidden relative">
         <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2]">
             <div class="w-full lg:w-2/3 lg:pr-20 relative group">
-                <div class="p-10 backdrop-blur-md bg-black/50 text-white shadow-xl">
+                <div class="p-10 backdrop-blur-md bg-white/50 text-black border-2 border-black rounded-lg">
                     <div class="flex flex-col gap-5">
                         <h1 class="opacity-80 font-hand text-xl">Your Dietary Preferences</h1>
                         <div class="font-extrabold text-3xl xl:text-4xl tracking-tight">Discover Your Ideal Diet: <br>A Comprehensive Guide to Popular Dietary Preferences.</div>
@@ -47,10 +47,10 @@
                     <!-- Default list slot -->
                     <template v-slot="{ list }">
                         <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
-                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full">
+                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black rounded-lg">
                                 <NuxtLink :to="`/dietary/tags/${tag}`" v-for="(tag, n) in article.tags" :key="n" class="absolute font-hand right-0 top-4 bg-black text-white px-2 py-1 text-xs rounded-l-lg">{{ tag }}</NuxtLink>
-                                <NuxtLink :to="article._path" class="w-full h-48">
-                                    <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                <NuxtLink :to="article._path" class="w-full h-48 rounded-t-lg">
+                                    <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-t-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
                                     <h2 class="text-xl text-slate-900 font-extrabold">{{ article.title }}</h2>

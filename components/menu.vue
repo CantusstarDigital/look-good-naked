@@ -20,6 +20,7 @@
                     <li>
                         <NuxtLink to="/fitness" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Fitness</NuxtLink>
                     </li>
+                    <!--
                     <li>
                         <NuxtLink to="/lifestyle" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Lifestyle</NuxtLink>
                     </li>
@@ -29,6 +30,7 @@
                     <li>
                         <NuxtLink to="/age" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Age</NuxtLink>
                     </li>
+                    -->
                     <li>
                         <NuxtLink to="/tools" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Tools</NuxtLink>
                     </li>
