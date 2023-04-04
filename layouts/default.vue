@@ -1,11 +1,9 @@
 <template>
-    <div class="">
-        <Menu />
-        <drawer />
-        <slot />
-        <SignUp />
-        <Footer />
-    </div>
+    <Menu />
+    <drawer />
+    <slot />
+    <SignUp />
+    <Footer />
 </template>
 
 <script setup>

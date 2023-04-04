@@ -19,15 +19,15 @@
                 </div>
 
                 <div class="">
-                    <NuxtLink to="/fitness" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">About Us</NuxtLink>
-                    <NuxtLink to="/dietary" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Contact Us</NuxtLink>
+                    <NuxtLink to="/about-us" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">About Us</NuxtLink>
+                    <NuxtLink to="/contact-us" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Contact Us</NuxtLink>
                     <NuxtLink to="/newsletter" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Newsletters</NuxtLink>
-                    <NuxtLink to="/health" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Sitemap</NuxtLink>
+                    <NuxtLink to="/sitemap" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Sitemap</NuxtLink>
                 </div>
 
                 <div class="max-w-2xl text-xs flex flex-col gap-4">
                     <p>The content on our website serves as a resource for informational and educational purposes only and should not be construed as a replacement for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional to guide your health needs and concerns.</p>
-                    <p class="font-semibold">&copy; {{ new Date().getFullYear() }} LookGoodNood — All rights reserved</p>
+                    <p class="font-semibold">&copy; {{ new Date().getFullYear() }} LookGoodNood — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink></p>
                 </div>
 
                 <div class="flex space-x-6">

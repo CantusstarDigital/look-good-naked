@@ -4,7 +4,9 @@
         <div class="max-w-7xl px-6 md:px-8 flex flex-wrap items-center justify-between mx-auto">
 
             <NuxtLink to="/" class="flex items-center gap-2 group">
-                <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="eager" />
+                <picture>
+                    <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="eager" />
+                </picture>
                 <span class="hidden lg:flex self-center font-hand whitespace-nowrap text-slate-900 transition-opacity opacity-0 group-hover:opacity-100">LookGoodNood</span>
             </NuxtLink>
 

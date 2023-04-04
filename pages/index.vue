@@ -24,7 +24,7 @@
                             <article v-for="article in list.slice(0, 3)" :key="article._path" class="card relative group flex flex-col gap-4">
                                 <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black rounded-lg">
                                     <NuxtLink :to="article._path" class="w-full h-48 rounded-t-lg">
-                                        <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-t-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                        <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-3 px-3 pb-3">
                                         <h3 class="text-xl font-extrabold text-slate-900">{{ article.title }}</h3>
@@ -72,7 +72,7 @@
                             <article v-for="article in list.slice(0, 3)" :key="article._path" class="card relative group flex flex-col gap-4">
                                 <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black rounded-lg">
                                     <NuxtLink :to="article._path" class="w-full h-48 rounded-t-lg">
-                                        <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-t-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                        <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-3 px-3 pb-3">
                                         <h3 class="text-xl font-extrabold text-slate-900">{{ article.title }}</h3>
@@ -120,7 +120,7 @@
                             <article v-for="article in list.slice(0, 4)" :key="article._path" class="card relative group flex flex-col gap-4">
                                 <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black rounded-lg">
                                     <NuxtLink :to="article._path" class="w-full h-48 rounded-t-lg">
-                                        <img :src="`${article.img}`" class="object-cover w-full h-48 rounded-t-lg" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
+                                        <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-3 px-3 pb-3">
                                         <h3 class="text-xl font-extrabold text-slate-900 line-clamp-1">{{ article.title }}</h3>

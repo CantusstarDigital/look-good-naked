@@ -17,35 +17,50 @@
         </div>
     </header>
 
-    <div class="relative mx-auto flex max-w-7xl justify-center sm:px-2 lg:px-8 xl:px-12">
-
-      <div class="hidden lg:relative lg:block lg:flex-none">
-          <div class="absolute inset-y-0 right-0 w-[50vw] bg-slate-50"></div>
-          <div class="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto overflow-x-hidden py-16 pl-0.5">
-              <div class="text-base lg:text-sm w-64 pr-8 xl:w-72 xl:pr-16">
-                  <!-- Toc Component -->
-                  <Toc :links="data.article.body.toc.links" />
-              </div>
+    <div class="max-w-7xl mx-auto px-6 md:px-8">
+      <div class="flex flex-col gap-4">
+        <picture>
+          <source :srcset="`${data.article.img}`" type="image/jpeg">
+          <img :src="`${data.article.img}`" :alt="data.article.title" :title="data.article.title" width="300px"
+            height="300px" class="mx-auto rounded-lg w-full" loading="eager" />
+        </picture>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <h2 class="text-xs font-semibold italic text-left">{{ data.article.alt }}</h2>
           </div>
+          <div>
+            <div class="text-xs font-semibold italic text-right">Photo by <a :href="`${data.article.creditlink}`" target="_blank">{{ data.article.credit }}</a></div>
+          </div>
+        </div>
       </div>
+    </div>
+
+
+    <div class="relative mx-auto flex max-w-7xl justify-center px-6 md:px-8">
 
       <div class="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
 
-          <div class="flex flex-col gap-4">
-            <picture>
-              <source :srcset="`${data.article.img}`" type="image/jpeg">
-              <img :src="`${data.article.img}`" :alt="data.article.title" :title="data.article.title" width="300px"
-                height="300px" class="mx-auto rounded-lg w-full" loading="eager" />
-            </picture>
-            <div class="grid grid-cols-2 gap-5">
+        <nav class="flex" aria-label="Breadcrumb">
+          <ol role="list" class="flex items-center space-x-1">
+            <li>
               <div>
-                <h2 class="text-xs font-semibold italic text-left">{{ data.article.alt }}</h2>
+                <NuxtLink to="/">
+                  <picture>
+                    <img src="/img/logo.svg" class="h-10 w-10" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="eager" />
+                  </picture>
+                </NuxtLink>
               </div>
-              <div>
-                <div class="text-xs font-semibold italic text-right">Photo by <a :href="`${data.article.creditlink}`" target="_blank">{{ data.article.credit }}</a></div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                </svg>
+                <NuxtLink to="/dietary" class="ml-1 text-sm font-bold text-gray-500 hover:text-black">Dietary</NuxtLink>
               </div>
-            </div>
-          </div>
+            </li>
+          </ol>
+        </nav>
 
           <article class="prose prose-a:no-underline prose-h2:font-hand">
             <!-- render document coming from query -->
@@ -66,6 +81,17 @@
         <!-- PrevNext Component -->
         <PrevNext :prev="prev" :next="next" />
 
+      </div>
+
+      <div class="hidden lg:relative lg:block lg:flex-none h-full">
+          <div class="h-full overflow-y-auto overflow-x-hidden py-16">
+              <div class="w-64 pr-8 xl:w-72 xl:pr-16 bg-slate-50">
+                  <!-- Toc Component 
+                  <Toc :links="data.article.body.toc.links" />
+                  -->
+                  
+              </div>
+          </div>
       </div>
 
     </div>
@@ -102,36 +128,6 @@ const formatDate = (date) => {
   const day = d.getDate();
 
   return `${day} ${month} ${year}`;
-};
-
-// Load the Bootstrap JavaScript library as a client-side module
-const loadBootstrap = async () => {
-    const { ScrollSpy } = await import('bootstrap');
-    return ScrollSpy;
-};
-
-onMounted(async () => {
-    const targets = document.querySelectorAll('#tocNav a[href^="#"]');
-    targets.forEach(target => {
-        target.addEventListener('click', (event) => {
-            const id = target.getAttribute('href');
-            scrollTo(id);
-        });
-    })
-    if (process.client) {
-        const ScrollSpy = await loadBootstrap();
-        const scrollSpy = new ScrollSpy(document.body, {
-            target: '#tocNav',
-            offset: 1000
-        })
-    }
-});
-
-const scrollTo = (id) => {
-    const target = document.querySelector(id);
-    target.scrollIntoView({
-        behavior: 'smooth'
-    });
 };
 
 // set the meta
