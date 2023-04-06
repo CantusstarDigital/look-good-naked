@@ -5,8 +5,8 @@ export default defineNuxtConfig({
     ],
     runtimeConfig: {
         public: {
-            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://look-good-nood.com',
-            siteName: 'Look Good Nood',
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://ghostfit.me',
+            siteName: 'GhostFit',
             siteDescription: 'Things to do, eat and plan to look good in the nood',
             language: 'en', // prefer more explicit language codes like `en-AU` over `en`
         }
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         'nuxt-gtag'
     ],
     gtag: {
-        id: 'G-H1QN06FTLW'
+        id: 'G-G589HP4KW2'
     },
     content: {
         // https://content.nuxtjs.org/api/configuration

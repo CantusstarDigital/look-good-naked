@@ -5,9 +5,9 @@
 
             <NuxtLink to="/" class="flex items-center gap-2 group">
                 <picture>
-                    <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="eager" />
+                    <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="GhostFit" title="GhostFit" loading="eager" />
                 </picture>
-                <span class="hidden lg:flex self-center font-hand whitespace-nowrap text-slate-900 transition-opacity opacity-0 group-hover:opacity-100">LookGoodNood</span>
+                <span class="hidden lg:flex self-center font-hand whitespace-nowrap text-slate-900 transition-opacity opacity-0 group-hover:opacity-100">GhostFit</span>
             </NuxtLink>
 
             <button class="md:hidden font-hand px-2 leading-10 rounded transition-all bg-gray-50 hover:bg-gray-100 hover:text-black" type="button" data-drawer-target="drawer-right" data-drawer-show="drawer-right" data-drawer-placement="right" aria-controls="drawer-right">
@@ -29,7 +29,5 @@
             </div>
         </div>
     </nav>
-
-    <div class="bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-30 hidden"></div>
 
 </template>

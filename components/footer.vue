@@ -5,31 +5,28 @@
 
                 <div>
                     <NuxtLink to="/" class="flex items-center h-14 w-14 gap-2">
-                        <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="lazy" />
+                        <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="GhostFit" title="GhostFit" loading="lazy" />
                     </NuxtLink>
                 </div>
 
                 <div class="">                  
                     <NuxtLink to="/dietary" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Dietary Preferences</NuxtLink>
                     <NuxtLink to="/fitness" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Fitness Goals</NuxtLink>
-                    <!--<NuxtLink to="/lifestyle" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Lifestyle Factors</NuxtLink>
-                    <NuxtLink to="/health" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Health Conditions</NuxtLink>
-                    <NuxtLink to="/age" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Age Groups</NuxtLink>-->
                     <NuxtLink to="/tools" class="font-hand text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Fitness Tools</NuxtLink>
                 </div>
 
                 <div class="">
                     <NuxtLink to="/about-us" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">About Us</NuxtLink>
                     <NuxtLink to="/contact-us" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Contact Us</NuxtLink>
-                    <NuxtLink to="/newsletter" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Newsletters</NuxtLink>
                     <NuxtLink to="/sitemap" class="font-bold mr-8 inline-flex leading-10 transition-all hover:text-black">Sitemap</NuxtLink>
                 </div>
 
                 <div class="max-w-2xl text-xs flex flex-col gap-4">
                     <p>The content on our website serves as a resource for informational and educational purposes only and should not be construed as a replacement for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional to guide your health needs and concerns.</p>
-                    <p class="font-semibold">&copy; {{ new Date().getFullYear() }} LookGoodNood — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink>.</p>
+                    <p class="font-semibold">&copy; {{ new Date().getFullYear() }} GhostFit — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink>.</p>
                 </div>
 
+                <!--
                 <div class="flex space-x-6">
                     <a href="#" class="text-gray-500 hover:text-black">
                         <span class="sr-only">Facebook</span>
@@ -66,6 +63,7 @@
                         </svg>
                     </a>
                 </div>
+                -->
 
             </div>
         </div>

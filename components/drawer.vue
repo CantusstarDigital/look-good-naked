@@ -14,10 +14,10 @@
             <ul class="flex flex-col gap-2">
                 <li><NuxtLink to="/about-us" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">About Us</NuxtLink></li>
                 <li><NuxtLink to="/contact-us" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Contact Us</NuxtLink></li>
-                <li><NuxtLink to="/newsletter" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Newsletters</NuxtLink></li>
                 <li><NuxtLink to="/sitemap" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-black">Sitemap</NuxtLink></li>
             </ul>
 
+            <!--
             <div class="flex justify-between">
                 <a href="#" class="text-gray-500 hover:text-black">
                     <span class="sr-only">Facebook</span>
@@ -54,6 +54,7 @@
                     </svg>
                 </a>
             </div>
+            -->
 
             <div class="flex flex-col gap-6">
                 <p class="text-xs">The content on our website serves as a resource for informational and educational purposes only and should not be construed as a replacement for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional to guide your health needs and concerns.</p>
