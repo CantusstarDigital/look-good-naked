@@ -180,8 +180,8 @@
         return `${day}-${month}-${year}`;
     };
 
-    const title = ref('Your Ultimate Guide to Fitness, Nutrition, Health, Sex, Style, Grooming, Tech, Weight Loss, and More with Amazon Affiliates.')
-    const description = ref('Homepage Description')
+    const title = ref('The Ultimate Health & Wellness Guide')
+    const description = ref('Discover the ultimate guide to health & wellness. Get actionable tips on fitness, nutrition, grooming, style, weight loss & more. Shop on Amazon too!')
 
     // set meta for page
     useHead({
