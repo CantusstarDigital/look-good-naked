@@ -7,23 +7,23 @@
                 <picture>
                     <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Phantom Wellness" title="Phantom Wellness" loading="eager" />
                 </picture>
-                <span class="hidden lg:flex self-center font-hand whitespace-nowrap text-slate-900 transition-opacity opacity-0 group-hover:opacity-100">Phantom Wellness</span>
+                <span class="hidden lg:flex self-center whitespace-nowrap text-slate-900 transition-opacity opacity-0 group-hover:opacity-100">Phantom Wellness</span>
             </NuxtLink>
 
-            <button class="md:hidden font-hand px-2 leading-10 rounded transition-all bg-gray-50 hover:bg-gray-100 hover:text-black" type="button" data-drawer-target="drawer-right" data-drawer-show="drawer-right" data-drawer-placement="right" aria-controls="drawer-right">
+            <button class="md:hidden px-2 leading-10 rounded transition-all bg-gray-50 hover:bg-gray-100 hover:text-black" type="button" data-drawer-target="drawer-right" data-drawer-show="drawer-right" data-drawer-placement="right" aria-controls="drawer-right">
                 Menu
             </button>
 
             <div class="hidden w-full md:block md:w-auto">
                 <ul class="flex items-center gap-x-8">                  
                     <li>
-                        <NuxtLink to="/dietary" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Dietary</NuxtLink>
+                        <NuxtLink to="/dietary" class="p-2 flex transition-all hover:text-black">Dietary</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/fitness" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Fitness</NuxtLink>
+                        <NuxtLink to="/fitness" class="p-2 flex leading-tight transition-all hover:text-black">Fitness</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/tools" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Tools</NuxtLink>
+                        <NuxtLink to="/tools" class="p-2 flex leading-tight transition-all hover:text-black">Tools</NuxtLink>
                     </li>
                 </ul>
             </div>

@@ -22,7 +22,7 @@
       <picture>
         <source :srcset="`${data.article.img}`" type="image/jpeg">
         <img :src="`${data.article.img}`" :alt="data.article.title" :title="data.article.title" width="300px"
-          height="300px" class="mx-auto rounded-lg w-full" loading="eager" />
+          height="300px" class="mx-auto w-full" loading="eager" />
       </picture>
       <div class="grid grid-cols-2 gap-5">
         <div>
@@ -62,7 +62,7 @@
         </ol>
       </nav>
 
-        <article class="prose prose-a:no-underline prose-h2:font-hand">
+        <article class="prose prose-a:no-underline prose-h2:font-black">
           <!-- render document coming from query -->
           <ContentRenderer :value="data.article">
 

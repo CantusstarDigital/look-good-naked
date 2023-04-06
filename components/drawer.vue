@@ -1,14 +1,14 @@
 <template>
     <div id="drawer-right" class="fixed top-0 right-0 z-50 h-screen p-4 pr-0 overflow-y-auto transition-transform translate-x-full bg-white w-80" tabindex="-1" aria-labelledby="drawer-right-label">
-        <button type="button" data-drawer-hide="drawer-right" aria-controls="drawer-right" class="font-hand absolute right-4 top-4 px-2 leading-10 rounded transition-all bg-gray-50 hover:bg-gray-100 hover:text-black" >
+        <button type="button" data-drawer-hide="drawer-right" aria-controls="drawer-right" class="absolute right-4 top-4 px-2 leading-10 rounded transition-all bg-gray-50 hover:bg-gray-100 hover:text-black" >
             Close
         </button>
 
         <div class="h-full overflow-y-auto flex flex-col gap-6 py-12 pr-4">
 
             <ul class="flex flex-col gap-2">                  
-                <li><NuxtLink to="/dietary" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Dietary Preferences</NuxtLink></li>
-                <li><NuxtLink to="/fitness" class="font-hand text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Fitness Goals</NuxtLink></li>
+                <li><NuxtLink to="/dietary" class="text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Dietary Preferences</NuxtLink></li>
+                <li><NuxtLink to="/fitness" class="text-xl p-2 rounded flex leading-tight transition-all hover:text-black">Fitness Goals</NuxtLink></li>
             </ul>
 
             <ul class="flex flex-col gap-2">

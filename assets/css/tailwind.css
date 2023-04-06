@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url("https://use.typekit.net/xrq1xxt.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --watch --minify */
+
 
 .router-link-active {
     @apply text-black;
@@ -86,7 +87,6 @@
     z-index: -2;
     top: 0;
     left: 0;
-    @apply rounded-lg;
 }
 .card:hover::after {
     transform: translate(-10px,10px);

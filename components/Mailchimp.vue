@@ -22,7 +22,7 @@
 
                 <div class="optionalParent mt-4">
                     <div class="clear foot flex flex-col gap-4">
-                        <input type="submit" value="Get it Now" name="subscribe" id="mc-embedded-subscribe" class="button rounded-full font-hand bg-gray-100 py-2 px-4 text-gray-900 hover:bg-gray-200 cursor-pointer">
+                        <input type="submit" value="Get it Now" name="subscribe" id="mc-embedded-subscribe" class="button rounded-full bg-gray-100 py-2 px-4 text-gray-900 hover:bg-gray-200 cursor-pointer">
                         <div class="brandingLogo text-center mt-4">
                             <a href="http://eepurl.com/in4Yqk" target="_blank" title="Mailchimp - email marketing made easy and fun" class="flex mx-auto w-[220px]">
                                 <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" width="220" height="42" title="Phantom Wellness on Mailchimp" alt="Phantom Wellness on Mailchimp" loading="lazy">

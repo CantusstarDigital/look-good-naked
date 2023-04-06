@@ -4,7 +4,7 @@
     <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2] text-white">
       <div class="w-full lg:w-2/3 relative group">
           <div class="flex flex-col gap-3">
-            <div class="opacity-80 font-hand text-xl">Fitness Tools</div>
+            <div class="opacity-80 text-xl">Fitness Tools</div>
             <h1 class="font-extrabold text-3xl xl:text-4xl tracking-tight">{{ data.article.title }}</h1>
           </div>
       </div>
@@ -13,7 +13,7 @@
 
   <div class="mt-20 mb-20 max-w-7xl mx-auto px-6 md:px-8">
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-10">
-      <article class="prose prose-a:no-underline prose-headings:font-hand prose-headings:font-normal first-of-type:prose-h2:mt-0">
+      <article class="prose prose-a:no-underline prose-headings:prose-headings:font-normal first-of-type:prose-h2:mt-0">
         <ContentRenderer :value="data.article">
           <template #empty>
             <p>No content found.</p>

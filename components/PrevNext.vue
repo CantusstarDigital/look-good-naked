@@ -8,7 +8,7 @@ defineProps(["prev", "next"]);
         <div class="grid grid-cols-2 w-full gap-10">
             <div class="">
                 <div v-if="prev">
-                    <div class="text-sm font-hand text-slate-900"><span>←</span> Prev</div>
+                    <div class="text-sm text-slate-900"><span>←</span> Prev</div>
                     <div class="mt-1">
                         <NuxtLink :to="prev._path" class="cursor-pointer font-semibold text-slate-500 hover:text-slate-600">
                             {{ prev.title }}
@@ -19,7 +19,7 @@ defineProps(["prev", "next"]);
             </div>
             <div>
                 <div v-if="next" class="text-right">
-                    <div class="text-sm font-hand text-slate-900">Next <span>→</span></div>
+                    <div class="text-sm text-slate-900">Next <span>→</span></div>
                     <div class="mt-1">
                         <NuxtLink :to="next._path" class="cursor-pointer font-semibold text-slate-500 hover:text-slate-600">
                             {{ next.title }}

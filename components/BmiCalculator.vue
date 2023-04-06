@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-white py-8 px-4 border-2 border-black shadow rounded-lg sm:px-10 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="bg-white py-8 px-4 border-2 border-black shadow sm:px-10 sm:mx-auto sm:w-full sm:max-w-md">
         <div class="flex flex-col gap-4">
-            <h2 class="text-xl text-slate-900 font-hand">BMI Calculator</h2>
+            <h2 class="text-xl text-slate-900">BMI Calculator</h2>
             <div>
                 <label for="weight" class="block text-sm font-semibold leading-6">Weight</label>
                 <div class="grid grid-cols-2 gap-4">
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <button @click="calculateBMI"
-                class="rounded-full font-hand bg-red-500 py-2 px-4 text-white hover:bg-red-700 cursor-pointer">
+                class="rounded-full bg-red-500 py-2 px-4 text-white hover:bg-red-700 cursor-pointer">
                 Calculate BMI
             </button>
             <div v-if="bmi">

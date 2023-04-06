@@ -3,13 +3,13 @@
     <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/fitness.jpg')] overflow-hidden relative">
         <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2]">
             <div class="w-full lg:w-2/3 lg:pr-20 relative group">
-                <div class="p-10 backdrop-blur-md bg-white text-black border-2 border-black rounded-lg">
+                <div class="p-10 backdrop-blur-md bg-white text-black border-2 border-black">
                     <div class="flex flex-col gap-5">
-                        <h1 class="opacity-80 font-hand text-xl">Your Fitness Goals</h1>
+                        <h1 class="opacity-80 text-xl">Your Fitness Goals</h1>
                         <div class="font-extrabold text-3xl xl:text-4xl tracking-tight">Unlock Your Potential: <br>The Ultimate Guide to Achieving Your Fitness Goals</div>
                         <div class="space-x-2">
                             <span v-for="(tag, n) in articleTags" :key="n">
-                                <NuxtLink :to="`/fitness/tags/${tag}`" class="group font-hand inline-flex items-center h-6 rounded-full text-sm whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
+                                <NuxtLink :to="`/fitness/tags/${tag}`" class="group inline-flex items-center h-6 rounded-full text-sm whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
                             </span>
                         </div>
                     </div>
@@ -48,9 +48,9 @@
                     <!-- Default list slot -->
                     <template v-slot="{ list }">
                         <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
-                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black rounded-lg">
-                                <NuxtLink :to="`/fitness/tags/${tag}`" v-for="(tag, n) in article.tags" :key="n" class="absolute right-0 top-4 bg-black text-white px-2 py-1 uppercase font-bold text-xs rounded-l-lg">{{ tag }}</NuxtLink>
-                                <NuxtLink :to="article._path" class="w-full h-48 rounded-t-lg">
+                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black">
+                                <NuxtLink :to="`/fitness/tags/${tag}`" v-for="(tag, n) in article.tags" :key="n" class="absolute right-0 top-4 bg-black text-white px-2 py-1 uppercase font-bold text-xs">{{ tag }}</NuxtLink>
+                                <NuxtLink :to="article._path" class="w-full h-48">
                                     <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">

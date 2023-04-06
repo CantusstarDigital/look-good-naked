@@ -13,7 +13,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'hand': ['Permanent Marker', 'cursive'],
+        'sans': ['normalidad-variable', 'sans-serif'],
+        'hand': ['normalidad-variable', 'sans-serif'],
       }
     },
   },

@@ -5,7 +5,7 @@
       <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2] text-white">
         <div class="w-full lg:w-2/3 relative group">
             <div class="flex flex-col gap-3">
-              <h1 class="font-extrabold text-3xl xl:text-4xl tracking-tight">Insights on <span class="font-hand font-normal">{{ slug }}</span></h1>
+              <h1 class="font-extrabold text-3xl xl:text-4xl tracking-tight">Insights on <span class="font-normal">{{ slug }}</span></h1>
             </div>
         </div>
       </section>
@@ -31,8 +31,8 @@
               <!-- Default list slot -->
               <template v-slot="{ list }">
                         <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
-                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black rounded-lg">
-                                <NuxtLink :to="article._path" class="w-full h-48 rounded-t-lg">
+                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black">
+                                <NuxtLink :to="article._path" class="w-full h-48">
                                     <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
