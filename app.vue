@@ -40,6 +40,6 @@
 
   // Head
   useHead({
-    titleTemplate: '%s · GhostFit',
+    titleTemplate: '%s · Phantom Wellness',
   })
 </script>

@@ -4,9 +4,10 @@
             <div class="flex flex-col gap-6">
 
                 <div>
-                    <NuxtLink to="/" class="flex items-center h-14 w-14 gap-2">
-                        <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="GhostFit" title="GhostFit" loading="lazy" />
+                    <NuxtLink to="/" class="flex items-center h-14 w-14 gap-2 group">
+                        <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Phantom Wellness" title="Phantom Wellness" loading="lazy" />
                     </NuxtLink>
+                    <span class="hidden lg:flex self-center font-hand whitespace-nowrap text-slate-900 transition-opacity opacity-0 group-hover:opacity-100">Phantom Wellness</span>
                 </div>
 
                 <div class="">                  
@@ -23,7 +24,7 @@
 
                 <div class="max-w-2xl text-xs flex flex-col gap-4">
                     <p>The content on our website serves as a resource for informational and educational purposes only and should not be construed as a replacement for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional to guide your health needs and concerns.</p>
-                    <p class="font-semibold">&copy; {{ new Date().getFullYear() }} GhostFit — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink>.</p>
+                    <p class="font-semibold">&copy; {{ new Date().getFullYear() }} Phantom Wellness — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink>.</p>
                 </div>
 
                 <!--

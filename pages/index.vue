@@ -180,7 +180,7 @@
         return `${day}-${month}-${year}`;
     };
 
-    const title = ref('Homepage Title')
+    const title = ref('Your Ultimate Guide to Fitness, Nutrition, Health, Sex, Style, Grooming, Tech, Weight Loss, and More with Amazon Affiliates.')
     const description = ref('Homepage Description')
 
     // set meta for page
