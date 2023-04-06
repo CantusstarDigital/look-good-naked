@@ -1,5 +1,12 @@
 <template>
     <div>
+
+        <section class="py-20 xl:py-40">
+            <div class="max-w-5xl mx-auto px-6 md:px-8 flex flex-col gap-5 font-hand text-center text-4xl text-gray-950">
+                <div>We believe that a more sustainable and equitable future starts with taking actionable steps to improve our <NuxtLink to="/dietary" class="text-red-500">health</NuxtLink>, <NuxtLink to="/fitness" class="text-red-500">fitness</NuxtLink>, and wellness- even in a world that's constantly changing and speeding up.</div>
+            </div>
+        </section>
+
         <section class="py-20">
             <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
@@ -50,7 +57,6 @@
 
         <section class="py-20 xl:py-40">
             <div class="max-w-5xl mx-auto px-6 md:px-8 flex flex-col gap-5 font-hand text-center text-4xl text-gray-950">
-                <div>We believe that a more sustainable and equitable future starts with taking actionable steps to improve our <NuxtLink to="/dietary" class="text-red-500">health</NuxtLink>, <NuxtLink to="/fitness" class="text-red-500">fitness</NuxtLink>, and wellness- even in a world that's constantly changing and speeding up.</div> 
                 <div>Our mission is to provide you with the <NuxtLink to="/tools" class="text-red-500">tools you need</NuxtLink> to transform your lifestyle and design a future that prioritises your well-being. We're committed to learning and growing with you every step of the way.</div>
             </div>
         </section>
