@@ -117,7 +117,7 @@
                 </div>
                 <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
                     <ContentList path="/tools" :query="{ 
-                        only: ['title', 'description', '_path', 'img'],
+                        only: ['title', 'description', '_path', 'img', 'label'],
                         where: {
                             tags: {
                                 $contains: filter,
@@ -136,7 +136,7 @@
                                         <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-3 px-3 pb-3">
-                                        <h3 class="text-xl font-extrabold text-slate-900 line-clamp-1">{{ article.title }}</h3>
+                                        <h3 class="text-xl font-extrabold text-slate-900 line-clamp-1">{{ article.label }}</h3>
                                     </NuxtLink>
                                 </div>
                             </article>

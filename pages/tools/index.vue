@@ -27,7 +27,7 @@
 
 
                 <ContentList path="/tools" :query="{
-                    only: ['title', 'description', '_path', 'img'],
+                    only: ['title', 'description', '_path', 'img', 'label'],
                     where: {
                         tags: {
                             $contains: filter,
@@ -46,7 +46,7 @@
                                     <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
-                                    <h2 class="text-xl text-slate-900 font-extrabold">{{ article.title }}</h2>
+                                    <h2 class="text-xl text-slate-900 font-extrabold">{{ article.label }}</h2>
                                 </NuxtLink>
                             </div>
                         </article>

@@ -36,7 +36,6 @@
 }
 
 .prose h3 a[href*="#"] {
-    @apply font-bold;
 }
 
 .HoverArrow {
