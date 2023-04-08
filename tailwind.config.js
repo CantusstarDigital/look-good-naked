@@ -13,8 +13,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['normalidad-variable', 'sans-serif'],
-        'hand': ['normalidad-variable', 'sans-serif'],
+        'hand': ['CooperLtBTWXX', 'sans-serif'],
+        'sans': ['rigid-square', 'sans-serif'],
       }
     },
   },

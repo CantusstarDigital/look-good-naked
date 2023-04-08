@@ -2,20 +2,7 @@
 title: Calorie Calculator
 description: How Many Calories Should I Eat Per Day - Recommended intake ranges from 1,600 to 3,200 a day based on several factors
 label: Calorie Calculator
-img: /img/calorie-calculator.jpg
+img: /img/tools/calorie-intake.jpg
 alt: Calorie Calculator
 ---
 
-## How Many Calories Should I Eat Per Day?
-
-It depends.
-
-## What is your goal?
-
-### To lose weight
-
-### To maintain weight
-
-### To gain weight
-
-## Special Note

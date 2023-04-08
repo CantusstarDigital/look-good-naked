@@ -4,16 +4,15 @@
             <div class="flex flex-col gap-6">
 
                 <div>
-                    <NuxtLink to="/" class="flex items-center h-14 w-14 gap-2 group">
-                        <img src="/img/logo.svg" class="h-14 w-14" width="56px" height="56px" alt="Phantom Wellness" title="Phantom Wellness" loading="lazy" />
+                    <NuxtLink to="/" class="flex">
+                        <img src="/img/logo.png" class="h-12" alt="Phantom Wellness" title="Phantom Wellness" loading="eager" />
                     </NuxtLink>
-                    <span class="hidden lg:flex self-center whitespace-nowrap text-slate-900 transition-opacity opacity-0 group-hover:opacity-100">Phantom Wellness</span>
                 </div>
 
-                <div class="">                  
+                <div class="">    
+                    <NuxtLink to="/tools" class="text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Fitness Tools</NuxtLink>              
                     <NuxtLink to="/dietary" class="text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Dietary Preferences</NuxtLink>
                     <NuxtLink to="/fitness" class="text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Fitness Goals</NuxtLink>
-                    <NuxtLink to="/tools" class="text-xl mr-8 inline-flex leading-10 transition-all hover:text-black">Fitness Tools</NuxtLink>
                 </div>
 
                 <div class="max-w-2xl text-xs flex flex-col gap-4">

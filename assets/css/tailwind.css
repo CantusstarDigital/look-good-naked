@@ -36,7 +36,9 @@
     @apply text-black before:flex before:bg-black font-semibold;
 }
 
+.prose h2 a[href*="#"],
 .prose h3 a[href*="#"] {
+    @apply font-bold;
 }
 
 .HoverArrow {

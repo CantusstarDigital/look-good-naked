@@ -17,7 +17,7 @@
         <div class="max-w-2xl flex flex-col gap-4">
             <p class="text-xl font-semibold">Welcome to the Ultimate Fitness Toolset – your one-stop shop for all the essential calculators designed to help you achieve your fitness goals!</p>
             <p>Whether you're looking to lose weight, gain muscle, or improve your overall health, these user-friendly tools will make it easy to track your progress, optimise your workouts, and fine-tune your nutrition.</p> 
-            <p>Discover your ideal calorie intake, calculate your body fat percentage, or estimate your one-rep max – all at your fingertips. Dive in and let these calculators guide your journey towards a stronger, healthier, and more confident you!</p>
+            <p>Discover your ideal <NuxtLink to="/tools/calorie-calculator" class="underline hover:text-black">calorie intake</NuxtLink>, calculate your <NuxtLink to="/tools/lean-body-mass-calculator" class="underline hover:text-black">lean body mass</NuxtLink>, or estimate your <NuxtLink to="/tools/one-rep-max-calculator" class="underline hover:text-black">one-rep max</NuxtLink> – all at your fingertips. Dive in and let these calculators guide your journey towards a stronger, healthier, and more confident you!</p>
         </div>
     </div>
 
@@ -41,8 +41,8 @@
                     <!-- Default list slot -->
                     <template v-slot="{ list }">
                         <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
-                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black">
-                                <NuxtLink :to="article._path" class="w-full h-48">
+                            <div class="group relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black">
+                                <NuxtLink :to="article._path" class="w-full h-48 transition-all grayscale group-hover:grayscale-0">
                                     <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
