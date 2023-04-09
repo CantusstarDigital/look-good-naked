@@ -16,7 +16,7 @@
             <div>
               <NuxtLink to="/">
                 <picture>
-                  <img src="/img/logo.svg" class="h-10 w-10 opacity-70 hover:opacity-100" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="eager" />
+                  <img src="/img/logo.svg" class="h-6 w-6 opacity-70 hover:opacity-100" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="eager" />
                 </picture>
               </NuxtLink>
             </div>
@@ -40,7 +40,7 @@
         </ol>
       </nav>
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-10">
-      <article class="prose prose-a:no-underline">
+      <article class="prose">
         <ContentRenderer :value="data.article">
           <template #empty>
             <p>No content found.</p>

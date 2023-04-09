@@ -46,7 +46,7 @@
               <div>
                 <NuxtLink to="/">
                   <picture>
-                    <img src="/img/logo.svg" class="h-10 w-10" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="eager" />
+                    <img src="/img/logo.svg" class="h-6 w-6" width="56px" height="56px" alt="Look Good Nood" title="Look Good Nood" loading="eager" />
                   </picture>
                 </NuxtLink>
               </div>
@@ -62,7 +62,7 @@
           </ol>
         </nav>
 
-          <article class="prose prose-a:no-underline prose-h2:font-black">
+          <article class="prose">
             <!-- render document coming from query -->
             <ContentRenderer :value="data.article">
 

@@ -1,11 +1,11 @@
 <template>
-    <footer class="bg-white border-t-2 border-black" aria-labelledby="footer-heading">
+    <footer class="bg-white" aria-labelledby="footer-heading">
         <div class="py-10 max-w-7xl mx-auto px-6 md:px-8">
             <div class="flex flex-col gap-6">
 
                 <div>
-                    <NuxtLink to="/" class="flex">
-                        <img src="/img/logo.png" class="h-12" alt="Phantom Wellness" title="Phantom Wellness" loading="eager" />
+                    <NuxtLink to="/" class="flex cursor-pointer">
+                        <img src="/img/wordmark.png" width="150px" height="65px" alt="Phantom Wellness" title="Phantom Wellness" loading="eager" />
                     </NuxtLink>
                 </div>
 

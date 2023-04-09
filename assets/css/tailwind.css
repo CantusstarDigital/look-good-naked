@@ -7,9 +7,6 @@
 /* npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/styles.css --watch --minify */
 
 
-.router-link-active {
-    @apply text-black;
-}
 
 .aff-img a {
     @apply rounded shadow flex text-center hover:shadow-lg w-[250px] p-1 transition-all;
@@ -27,18 +24,6 @@
 }
 .art-cite a {
     @apply font-normal underline;
-}
-
-#tocNav li a {
-    @apply text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block;
-}
-#tocNav li a.active {
-    @apply text-black before:flex before:bg-black font-semibold;
-}
-
-.prose h2 a[href*="#"],
-.prose h3 a[href*="#"] {
-    @apply font-bold;
 }
 
 .HoverArrow {
@@ -92,4 +77,8 @@
 }
 .card:hover::after {
     transform: translate(-10px,10px);
+}
+
+.prose {
+    @apply prose-a:no-underline prose-a:font-bold;
 }

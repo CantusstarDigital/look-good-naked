@@ -17,7 +17,7 @@
         <div class="max-w-2xl flex flex-col gap-4">
             <p class="text-xl font-semibold">Welcome to the Ultimate Fitness Toolset – your one-stop shop for all the essential calculators designed to help you achieve your fitness goals!</p>
             <p>Whether you're looking to lose weight, gain muscle, or improve your overall health, these user-friendly tools will make it easy to track your progress, optimise your workouts, and fine-tune your nutrition.</p> 
-            <p>Discover your ideal <NuxtLink to="/tools/calorie-calculator" class="underline hover:text-black">calorie intake</NuxtLink>, calculate your <NuxtLink to="/tools/lean-body-mass-calculator" class="underline hover:text-black">lean body mass</NuxtLink>, or estimate your <NuxtLink to="/tools/one-rep-max-calculator" class="underline hover:text-black">one-rep max</NuxtLink> – all at your fingertips. Dive in and let these calculators guide your journey towards a stronger, healthier, and more confident you!</p>
+            <p>Discover your ideal <NuxtLink to="/tools/calorie-calculator" class="font-bold hover:text-[#F50D38]">calorie intake</NuxtLink>, calculate your <NuxtLink to="/tools/lean-body-mass-calculator" class="font-bold hover:text-[#F50D38]">lean body mass</NuxtLink>, or estimate your <NuxtLink to="/tools/one-rep-max-calculator" class="font-bold hover:text-[#F50D38]">one-rep max</NuxtLink> – all at your fingertips. Dive in and let these calculators guide your journey towards a stronger, healthier, and more confident you!</p>
         </div>
     </div>
 

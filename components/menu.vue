@@ -1,11 +1,11 @@
 <template>
     
-    <nav class="navbar w-full sticky top-0 z-20 py-2.5 bg-white border-b-2 border-black">
+    <nav class="navbar w-full sticky top-0 z-20 py-2.5 bg-white shadow">
         <div class="max-w-7xl px-6 md:px-8 flex flex-wrap items-center justify-between mx-auto">
 
-            <NuxtLink to="/" class="flex">
+            <NuxtLink to="/" class="flex cursor-pointer">
                 <picture>
-                    <img src="/img/logo.svg" class="h-12" alt="Phantom Wellness" title="Phantom Wellness" loading="eager" />
+                    <img src="/img/wordmark.png" width="150px" height="65px" alt="Phantom Wellness" title="Phantom Wellness" loading="eager" />
                 </picture>
             </NuxtLink>
 
