@@ -89,10 +89,6 @@ const loadComponent = async (slug) => {
     component = await import('~/components/FatIntakeCalculator.vue');
     break;
 
-    case 'height-weight-converter':
-    component = await import('~/components/HeightWeightConverter.vue');
-    break;
-
     case 'lean-body-mass-calculator':
     component = await import('~/components/LeanBodyMassCalculator.vue');
     break;
@@ -103,10 +99,6 @@ const loadComponent = async (slug) => {
 
     case 'maximum-hert-rate-calculator':
     component = await import('~/components/MaxHeartRateCalculator.vue');
-    break;
-
-    case 'nutrition-calculator':
-    component = await import('~/components/NutitionCalculator.vue');
     break;
 
     case 'one-rep-max-calculator':
