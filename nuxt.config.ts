@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     ],
     runtimeConfig: {
         public: {
-            siteUrl: process.env.NUXT_PUBLIC_SITE_URL,
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://phantomwellness.com',
             siteName: 'Phantom Wellness',
             siteDescription: 'The Complete Guide to Healthy Living with Phantom Wellness',
             language: 'en',
