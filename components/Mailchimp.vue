@@ -6,7 +6,7 @@
 
                 <div class="mc-field-group">
                     <label for="mce-EMAIL" class="block sr-only mb-2 text-sm font-bold text-white">Email Address</label>
-                    <input type="email" value="" name="EMAIL" placeholder="you@email.com" class="required email block w-full p-4 text-slate-900 border-2 border-slate-800 bg-slate-50 text-lg focus:ring-black focus:border-black placeholder:text-slate-800" id="mce-EMAIL" required>
+                    <input type="email" value="" name="EMAIL" placeholder="you@email.com" class="required email block w-full p-4 text-gray-900 border-2 border-gray-800 bg-gray-50 text-lg focus:ring-black focus:border-gray-950 placeholder:text-gray-800" id="mce-EMAIL" required>
                     <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
                 </div>
 
@@ -22,7 +22,7 @@
 
                 <div class="optionalParent mt-4">
                     <div class="clear foot flex flex-col gap-4">
-                        <input type="submit" value="Get it Now" name="subscribe" id="mc-embedded-subscribe" class="button rounded-full w-60 mx-auto bg-gray-700 py-2 px-4 text-white hover:bg-black cursor-pointer font-bold">
+                        <input type="submit" value="Get it Now" name="subscribe" id="mc-embedded-subscribe" class="button rounded-full w-60 mx-auto bg-gray-700 py-2 px-4 text-white hover:bg-gray-950 cursor-pointer font-bold">
                         <div class="brandingLogo text-center mt-4 sr-only">
                             <a href="http://eepurl.com/in4Yqk" target="_blank" title="Mailchimp - email marketing made easy and fun" class="flex mx-auto w-[220px]">
                                 <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" width="220" height="42" title="Phantom Wellness on Mailchimp" alt="Phantom Wellness on Mailchimp" loading="lazy">

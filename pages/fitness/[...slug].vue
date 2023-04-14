@@ -9,10 +9,10 @@
           </svg>
           {{ formatDate(data.article.created_At) }}
         </div> 
-        <h1 class="text-slate-900 font-extrabold text-4xl sm:text-5xl tracking-tight">{{ data.article.title }}</h1>
-        <p class="text-xl text-slate-500 font-bold">{{ data.article.description }}</p>
+        <h1 class="text-gray-900 font-extrabold text-4xl sm:text-5xl tracking-tight">{{ data.article.title }}</h1>
+        <p class="text-xl text-gray-500 font-bold">{{ data.article.description }}</p>
         <div class="space-x-2">
-          <NuxtLink :to="`/fitness/tags/${tag}`" v-for="(tag, n) in data.article.tags" :key="n" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
+          <NuxtLink :to="`/fitness/tags/${tag}`" v-for="(tag, n) in data.article.tags" :key="n" class="group inline-flex items-center h-6 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-gray-900 focus:ring-gray-500">{{ tag }}</NuxtLink>
         </div>
       </div>
   </header>
@@ -56,7 +56,7 @@
               <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
               </svg>
-              <NuxtLink to="/fitness" class="ml-1 text-sm font-bold text-gray-500 hover:text-black">Fitness</NuxtLink>
+              <NuxtLink to="/fitness" class="ml-1 text-sm font-bold text-gray-500 hover:text-gray-950">Fitness</NuxtLink>
             </div>
           </li>
         </ol>
@@ -85,7 +85,7 @@
 
     <div class="hidden lg:relative lg:block lg:flex-none h-full">
         <div class="h-full overflow-y-auto overflow-x-hidden py-16">
-            <div class="w-64 pr-8 xl:w-72 xl:pr-16 bg-slate-50">
+            <div class="w-64 pr-8 xl:w-72 xl:pr-16 bg-gray-50">
                 <!-- Toc Component 
                 <Toc :links="data.article.body.toc.links" />
                 -->

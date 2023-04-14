@@ -5,10 +5,10 @@ export default defineNuxtConfig({
     ],
     runtimeConfig: {
         public: {
-            siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://phantomwellness.com',
+            siteUrl: process.env.NUXT_PUBLIC_SITE_URL,
             siteName: 'Phantom Wellness',
             siteDescription: 'The Complete Guide to Healthy Living with Phantom Wellness',
-            language: 'en', // prefer more explicit language codes like `en-AU` over `en`
+            language: 'en',
         }
     },
     nitro: {
@@ -18,13 +18,13 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxt/content',
-        'nuxt-gtag'
+        'nuxt-gtag',
     ],
     gtag: {
         id: 'G-D4E2NF0RCC'
     },
     content: {
-        // https://content.nuxtjs.org/api/configuration
+        
     },
     postcss: {
         plugins: {

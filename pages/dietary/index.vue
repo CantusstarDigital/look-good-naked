@@ -3,13 +3,13 @@
     <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/dietary.jpg')] overflow-hidden relative">
         <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2]">
             <div class="w-full lg:w-2/3 lg:pr-20 relative group">
-                <div class="p-10 backdrop-blur-md bg-white text-black border-2 border-black">
-                    <div class="flex flex-col gap-5">
+                <div class="p-10 backdrop-blur-md bg-white text-gray-950 border-2 border-gray-950">
+                    <div class="flex flex-col gap-2">
                         <h1 class="opacity-80 text-xl">Your Dietary Preferences</h1>
                         <div class="font-extrabold text-3xl xl:text-4xl tracking-tight">Discover Your Ideal Diet: <br>A Comprehensive Guide to Popular Dietary Preferences.</div>
                         <div class="space-x-2">
                             <span v-for="(tag, n) in articleTags" :key="n">
-                                <NuxtLink :to="`/dietary/tags/${tag}`" class="group inline-flex items-center h-6 rounded-full text-sm whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500">{{ tag }}</NuxtLink>
+                                <NuxtLink :to="`/dietary/tags/${tag}`" class="group inline-flex items-center h-6 rounded-full text-sm whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-gray-900 focus:ring-gray-500">{{ tag }}</NuxtLink>
                             </span>
                         </div>
                     </div>
@@ -47,13 +47,13 @@
                     <!-- Default list slot -->
                     <template v-slot="{ list }">
                         <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
-                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black">
-                                <NuxtLink :to="`/dietary/tags/${tag}`" v-for="(tag, n) in article.tags" :key="n" class="absolute right-0 top-4 bg-black text-white px-2 py-1 text-xs">{{ tag }}</NuxtLink>
+                            <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-gray-950">
+                                <NuxtLink :to="`/dietary/tags/${tag}`" v-for="(tag, n) in article.tags" :key="n" class="absolute right-0 top-4 bg-gray-950 text-white px-2 py-1 text-xs">{{ tag }}</NuxtLink>
                                 <NuxtLink :to="article._path" class="w-full h-48">
                                     <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
-                                    <h2 class="text-xl text-slate-900 font-extrabold">{{ article.title }}</h2>
+                                    <h2 class="text-xl text-gray-900 font-extrabold">{{ article.title }}</h2>
                                     <div class="text-xs font-semibold flex gap-1 items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />

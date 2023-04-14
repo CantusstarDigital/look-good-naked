@@ -1,6 +1,6 @@
 <template>
     
-    <nav class="navbar w-full sticky top-0 z-20 py-2.5 bg-white shadow">
+    <nav class="navbar w-full sticky top-0 z-20 py-2.5 bg-gray-950 shadow">
         <div class="max-w-7xl px-6 md:px-8 flex flex-wrap items-center justify-between mx-auto">
 
             <NuxtLink to="/" class="flex cursor-pointer">
@@ -9,20 +9,20 @@
                 </picture>
             </NuxtLink>
 
-            <button class="md:hidden px-2 leading-10 rounded transition-all bg-gray-50 hover:bg-gray-100 hover:text-black" type="button" data-drawer-target="drawer-right" data-drawer-show="drawer-right" data-drawer-placement="right" aria-controls="drawer-right">
+            <button class="md:hidden px-2 leading-10 rounded transition-all bg-gray-50 hover:bg-gray-100 text-gray-300 hover:text-white" type="button" data-drawer-target="drawer-right" data-drawer-show="drawer-right" data-drawer-placement="right" aria-controls="drawer-right">
                 Menu
             </button>
 
             <div class="hidden w-full md:block md:w-auto">
                 <ul class="flex items-center gap-x-8">  
                     <li>
-                        <NuxtLink to="/tools" class="p-2 font-bold flex leading-tight transition-all hover:text-black">Fitness Tools</NuxtLink>
+                        <NuxtLink to="/tools" class="p-2 font-bold flex leading-tight transition-all text-gray-300 hover:text-white">Fitness Tools</NuxtLink>
                     </li>                
                     <li>
-                        <NuxtLink to="/dietary" class="p-2 font-bold flex transition-all hover:text-black">Dietary</NuxtLink>
+                        <NuxtLink to="/dietary" class="p-2 font-bold flex transition-all text-gray-300 hover:text-white">Dietary</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/fitness" class="p-2 font-bold flex leading-tight transition-all hover:text-black">Fitness</NuxtLink>
+                        <NuxtLink to="/fitness" class="p-2 font-bold flex leading-tight transition-all text-gray-300 hover:text-white">Fitness</NuxtLink>
                     </li>
                 </ul>
             </div>

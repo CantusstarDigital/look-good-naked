@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-white py-8 px-4 border-2 border-black sm:rounded-lg sm:px-10 sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="bg-white py-8 px-4 border-2 border-gray-950 sm:rounded-lg sm:px-10 sm:mx-auto sm:w-full sm:max-w-md">
         <div class="flex flex-col gap-4">
-            <h2 class="text-xl text-slate-900 font-bold">Calorie Calculator</h2>
+            <h2 class="text-xl text-gray-900 font-bold">Calorie Calculator</h2>
             <div class="grid grid-cols-2 gap-4">
                 <div>
                     <label for="age" class="block text-sm font-semibold leading-6">Age</label>
@@ -53,7 +53,7 @@
                 </select>
             </div>
             <button @click="calculateCalories"
-                class="rounded-full bg-gray-700 py-2 px-4 text-white hover:bg-black cursor-pointer font-bold">Calculate
+                class="rounded-full bg-gray-700 py-2 px-4 text-white hover:bg-gray-950 cursor-pointer font-bold">Calculate
                 Daily Calories</button>
             <div v-if="calories">Your estimated daily calorie intake:
                 <div class="text-3xl font-bold">{{ Math.round(calories) }}</div>

@@ -4,7 +4,7 @@
         <section class="py-20">
             <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
-                    <h2 class="text-3xl sm:text-4xl text-slate-900 font-bold">Fitness Tools</h2>
+                    <h2 class="text-3xl sm:text-4xl text-gray-900 font-bold">Fitness Tools</h2>
                     <p>Ultimate Fitness Toolset: Calculators for Every Fitness Goal</p>
                 </div>
                 <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4">
@@ -23,12 +23,12 @@
                         <!-- Default list slot -->
                         <template v-slot="{ list }">
                             <article v-for="article in list.slice(0, 8)" :key="article._path" class="card relative group flex flex-col gap-4">
-                                <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black">
+                                <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-gray-950">
                                     <NuxtLink :to="article._path" class="w-full h-48">
                                         <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-3 px-3 pb-3">
-                                        <h3 class="text-lg font-bold text-slate-900">{{ article.label }}</h3>
+                                        <h3 class="text-lg font-bold text-gray-900">{{ article.label }}</h3>
                                     </NuxtLink>
                                 </div>
                             </article>
@@ -51,7 +51,7 @@
         <section class="py-20">
             <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
-                    <h2 class="text-3xl sm:text-4xl text-slate-900 font-bold">Dietary Preferences</h2>
+                    <h2 class="text-3xl sm:text-4xl text-gray-900 font-bold">Dietary Preferences</h2>
                     <p>Discover Your Ideal Diet: A Comprehensive Guide to Popular Dietary Preferences.</p>
                 </div>
                 <div class="mx-auto grid max-w-2xl grid-cols-1 gap-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -70,12 +70,12 @@
                         <!-- Default list slot -->
                         <template v-slot="{ list }">
                             <article v-for="article in list.slice(0, 3)" :key="article._path" class="card relative group flex flex-col gap-4">
-                                <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black">
+                                <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-gray-950">
                                     <NuxtLink :to="article._path" class="w-full h-48">
                                         <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-3 px-3 pb-3">
-                                        <h3 class="text-xl font-bold text-slate-900">{{ article.title }}</h3>
+                                        <h3 class="text-xl font-bold text-gray-900">{{ article.title }}</h3>
                                         <div class="line-clamp-2">{{ article.description }}</div>
                                     </NuxtLink>
                                 </div>
@@ -99,7 +99,7 @@
         <section class="py-20">
             <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
-                    <h2 class="text-3xl sm:text-4xl text-slate-900 font-bold">Fitness Goals</h2>
+                    <h2 class="text-3xl sm:text-4xl text-gray-900 font-bold">Fitness Goals</h2>
                     <p>Unlock Your Potential: The Ultimate Guide to Achieving Your Fitness Goals</p>
                 </div>
                 <div class="mx-auto grid max-w-2xl grid-cols-1 gap-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -118,12 +118,12 @@
                         <!-- Default list slot -->
                         <template v-slot="{ list }">
                             <article v-for="article in list.slice(0, 3)" :key="article._path" class="card relative group flex flex-col gap-4">
-                                <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black">
+                                <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-gray-950">
                                     <NuxtLink :to="article._path" class="w-full h-48">
                                         <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                     </NuxtLink>
                                     <NuxtLink :to="article._path" class="group flex flex-col gap-3 px-3 pb-3">
-                                        <h3 class="text-xl font-bold text-slate-900">{{ article.title }}</h3>
+                                        <h3 class="text-xl font-bold text-gray-900">{{ article.title }}</h3>
                                         <div class="line-clamp-2">{{ article.description }}</div>
                                     </NuxtLink>
                                 </div>

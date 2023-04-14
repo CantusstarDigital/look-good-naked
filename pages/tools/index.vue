@@ -3,8 +3,8 @@
     <header class="bg-cover bg-center bg-no-repeat bg-[url('/img/dietary.jpg')] overflow-hidden relative">
         <section class="max-w-7xl mx-auto p-6 md:p-8 relative z-[2]">
             <div class="w-full lg:w-2/3 lg:pr-20 relative group">
-                <div class="p-10 backdrop-blur-md bg-white text-black border-2 border-black">
-                    <div class="flex flex-col gap-5">
+                <div class="p-10 backdrop-blur-md bg-white text-gray-950 border-2 border-gray-950">
+                    <div class="flex flex-col gap-2">
                         <h1 class="opacity-80 text-xl">Fitness Tools</h1>
                         <div class="font-extrabold text-3xl xl:text-4xl tracking-tight">Ultimate Fitness Toolset: <br>Calculators for Every Fitness Goal</div>
                     </div>
@@ -41,12 +41,12 @@
                     <!-- Default list slot -->
                     <template v-slot="{ list }">
                         <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
-                            <div class="group relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-black">
+                            <div class="group relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-gray-950">
                                 <NuxtLink :to="article._path" class="w-full h-48 transition-all grayscale group-hover:grayscale-0">
                                     <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">
-                                    <h2 class="text-xl text-slate-900 font-extrabold">{{ article.label }}</h2>
+                                    <h2 class="text-xl text-gray-900 font-extrabold">{{ article.label }}</h2>
                                 </NuxtLink>
                             </div>
                         </article>
