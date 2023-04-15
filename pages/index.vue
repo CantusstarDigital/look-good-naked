@@ -3,6 +3,14 @@
 
         <section class="py-20">
             <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
+                <div class="max-w-2xl mx-auto flex flex-col gap-4 text-center">
+                    <h1 class="text-4xl sm:text-5xl text-gray-900 font-extrabold uppercase">Your Ultimate <br>Health &amp; Wellness <br>Guide</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col gap-10">
                 <div class="max-w-2xl flex flex-col gap-4">
                     <h2 class="text-3xl sm:text-4xl text-gray-900 font-bold">Fitness Tools</h2>
                     <p>Ultimate Fitness Toolset: Calculators for Every Fitness Goal</p>

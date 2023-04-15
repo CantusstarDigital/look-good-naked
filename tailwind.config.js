@@ -13,7 +13,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'hand': ['CooperLtBTWXX', 'sans-serif'],
         'sans': ['rigid-square', 'sans-serif'],
       }
     },

@@ -5,7 +5,7 @@
 
                 <div>
                     <NuxtLink to="/" class="flex cursor-pointer">
-                        <img src="/img/wordmark.png" width="150px" height="65px" alt="Phantom Wellness" title="Phantom Wellness" loading="eager" />
+                        <img src="/img/logo-dark.svg" width="60px" height="60px" alt="Phantom Wellness" title="Phantom Wellness" loading="eager" />
                     </NuxtLink>
                 </div>
 
