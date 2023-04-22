@@ -7,17 +7,19 @@
         <div class="h-full overflow-y-auto flex flex-col gap-6 py-12 pr-4">
 
             <ul class="flex flex-col gap-2">                  
+                <li><NuxtLink to="/tools" class="text-xl p-2 rounded flex leading-tight transition-all hover:text-gray-950">Fitness Tools</NuxtLink></li>
                 <li><NuxtLink to="/dietary" class="text-xl p-2 rounded flex leading-tight transition-all hover:text-gray-950">Dietary Preferences</NuxtLink></li>
                 <li><NuxtLink to="/fitness" class="text-xl p-2 rounded flex leading-tight transition-all hover:text-gray-950">Fitness Goals</NuxtLink></li>
             </ul>
 
+            <!--
             <ul class="flex flex-col gap-2">
                 <li><NuxtLink to="/about-us" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-gray-950">About Us</NuxtLink></li>
                 <li><NuxtLink to="/contact-us" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-gray-950">Contact Us</NuxtLink></li>
                 <li><NuxtLink to="/sitemap" class="font-bold p-2 rounded flex leading-tight transition-all hover:text-gray-950">Sitemap</NuxtLink></li>
             </ul>
 
-            <!--
+            
             <div class="flex justify-between">
                 <a href="#" class="text-gray-500 hover:text-gray-950">
                     <span class="sr-only">Facebook</span>
@@ -58,7 +60,7 @@
 
             <div class="flex flex-col gap-6">
                 <p class="text-xs">The content on our website serves as a resource for informational and educational purposes only and should not be construed as a replacement for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional to guide your health needs and concerns.</p>
-                <p class="text-xs font-semibold">&copy; {{ new Date().getFullYear() }} LookGoodNood — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink>.</p>
+                <p class="text-xs font-semibold">&copy; {{ new Date().getFullYear() }} Phantom Wellness — All rights reserved. <NuxtLink to="/privacy-notice">Privacy Notice</NuxtLink>. <NuxtLink to="/terms-of-use">Terms of Use</NuxtLink>.</p>
             </div>
 
         </div>

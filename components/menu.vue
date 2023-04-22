@@ -9,7 +9,7 @@
                 </picture>
             </NuxtLink>
 
-            <button class="md:hidden px-2 leading-10 rounded transition-all bg-gray-50 hover:bg-gray-100 text-gray-300 hover:text-white" type="button" data-drawer-target="drawer-right" data-drawer-show="drawer-right" data-drawer-placement="right" aria-controls="drawer-right">
+            <button class="md:hidden px-2 leading-10 font-bold rounded transition-all bg-gray-800 text-gray-300" type="button" data-drawer-target="drawer-right" data-drawer-show="drawer-right" data-drawer-placement="right" aria-controls="drawer-right">
                 Menu
             </button>
 
