@@ -33,6 +33,7 @@
                       <article v-for="article in list" :key="article._path" class="card relative flex flex-col gap-4">
                           <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-gray-950">
                               <NuxtLink :to="article._path" class="w-full h-48">
+                                  <source :srcset="`${article.img}`" type="image/webp">
                                   <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                               </NuxtLink>
                               <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">

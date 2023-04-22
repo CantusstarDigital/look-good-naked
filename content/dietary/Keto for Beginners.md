@@ -1,7 +1,7 @@
 ---
 title: Keto for Beginners
 description: Your Ultimate Guide to Starting and Succeeding on a Ketogenic Diet.
-img: https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1153&q=80
+img: /img/dietary/keto-for-beginners.webp
 alt: Keto for Beginners - Your Ultimate Guide to Starting and Succeeding on a Ketogenic Diet
 created_At: 2023-03-12
 tags: [Keto]

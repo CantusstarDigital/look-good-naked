@@ -2,7 +2,7 @@
 title: BMR Calculator
 description: Some description.
 label: BMR Calculator
-img: /img/tools/bmr.jpg
+img: /img/tools/bmr.webp
 alt: BMR Calculator
 ---
 

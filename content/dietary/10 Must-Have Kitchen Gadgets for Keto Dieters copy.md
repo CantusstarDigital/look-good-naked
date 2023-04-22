@@ -1,7 +1,7 @@
 ---
 title: 10 Must-Have Kitchen Gadgets for Keto Dieters
 description: Investing in the right kitchen gadgets allows you to streamline your keto meal preparation, save time, and enjoy a diverse range of tasty, satisfying dishes.
-img: https://images.unsplash.com/reserve/EnF7DhHROS8OMEp2pCkx_Dufer%20food%20overhead%20hig%20res.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1178&q=80
+img: /img/dietary/kitchen-gadgets.webp
 alt: 10 Must-Have Kitchen Gadgets for Keto Dieters
 credit: Todd Quackenbush
 creditlink: https://unsplash.com/@toddquackenbush

@@ -51,6 +51,7 @@
                             <div class="relative z-[2] flex flex-col gap-4 bg-white shadow hover:shadow-lg h-full border-2 border-gray-950">
                                 <NuxtLink :to="`/fitness/tags/${tag}`" v-for="(tag, n) in article.tags" :key="n" class="absolute right-0 top-4 bg-gray-950 text-white px-2 py-1 uppercase font-bold text-xs">{{ tag }}</NuxtLink>
                                 <NuxtLink :to="article._path" class="w-full h-48">
+                                    <source :srcset="`${article.img}`" type="image/webp">
                                     <img :src="`${article.img}`" class="object-cover w-full h-48" width="300px" height="300px" :alt="article.title" :title="article.title" loading="lazy" />
                                 </NuxtLink>
                                 <NuxtLink :to="article._path" class="flex flex-col gap-3 px-3 pb-3">

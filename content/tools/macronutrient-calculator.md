@@ -2,7 +2,7 @@
 title: Macronutrient Calculator
 description: Some description.
 label: Macronutrient Calculator
-img: /img/tools/macros.jpg
+img: /img/tools/macros.webp
 alt: Macronutrient Calculator
 ---
 

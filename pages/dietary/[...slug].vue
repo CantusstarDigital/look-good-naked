@@ -20,9 +20,8 @@
     <div class="max-w-7xl mx-auto px-6 md:px-8">
       <div class="flex flex-col gap-4">
         <picture>
-          <source :srcset="`${data.article.img}`" type="image/jpeg">
-          <img :src="`${data.article.img}`" :alt="data.article.title" :title="data.article.title" width="300px"
-            height="300px" class="mx-auto w-full" loading="eager" />
+          <source :srcset="`${data.article.img}`" type="image/webp">
+          <img :src="`${data.article.img}`" :alt="data.article.title" :title="data.article.title" width="300px" height="300px" class="mx-auto w-full" loading="eager" />
         </picture>
         <div class="grid grid-cols-2 gap-5">
           <div>

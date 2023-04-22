@@ -2,7 +2,7 @@
 title: TDEE Calculator
 description: Some description.
 label: TDEE Calculator
-img: /img/tools/tdee.jpg
+img: /img/tools/tdee.webp
 alt: TDEE Calculator
 ---
 

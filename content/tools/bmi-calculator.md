@@ -2,7 +2,7 @@
 title: BMI Calculator - Calculate Your Body Mass Index
 description: Calculate your BMI with our easy-to-use tool. Learn how body fat impacts your health and create a wellness plan. Consider limitations & consult professionals.
 label: BMI Calculator
-img: /img/tools/bmi.jpg
+img: /img/tools/bmi.webp
 alt: BMI Calculator
 ---
 
